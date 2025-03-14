@@ -1,35 +1,31 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+"use client"; // Required for hooks like usePathname
 
-const inter = Inter({ subsets: ["latin"] })
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation"; // ✅ Get current route
+import PageTransition from "@/components/PageTransition";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-export const metadata: Metadata = {
-  title: "Anthony Wiktor Award-Winning Creative Director and Designer Who Moves Brands Forward",
-  description: "Anthony Wiktor is a Webby Award-Winning Creative Director and Designer based in Los Angeles specializing in branding, design, interactive, and advertising to help challenger brands break through the clutter and outsmart the competition.",
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" }
-    ]
-  }
-}
+const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname(); // 🔥 Get the current route
+
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-white text-black`}>
+    <html lang="en">
+      <body className={`${inter.className} bg-white text-black overflow-x-hidden`}>
         <Header />
-        <main>
-          {children}
+        <main className="relative">
+          <AnimatePresence mode="wait">
+            <PageTransition key={pathname}>
+              {children}
+            </PageTransition>
+          </AnimatePresence>
         </main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
