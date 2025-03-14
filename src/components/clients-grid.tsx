@@ -38,7 +38,7 @@ const clients = [
 
 export default function ClientsGrid() {
   return (
-    <section className="w-full bg-black">
+    <section className="w-full bg-black" id='clientsgrid'>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-zinc-900">
         {clients.map((client, index) => (
           <Link
