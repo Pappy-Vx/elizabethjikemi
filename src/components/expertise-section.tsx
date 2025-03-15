@@ -4,7 +4,7 @@ export default function ExpertiseSection() {
   return (
     <section className="py-20 bg-white px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-sequelWide text-6xl md:text-7xl lg:text-8xl uppercase mb-16">Expertise</h2>
+        <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-16">Expertise</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Strategy */}
