@@ -15,8 +15,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-16">
           <h3 className="text-sm uppercase mb-3 opacity-80">Get in touch</h3>
-          <div className="flex gap-4 mb-12  ">
-            <Link href="https://twitter.com/creativeanthony" target="_blank" className="font-sequelWide text-4xl cursor-pointer flex flex-row gap-0 justify-center items-center">
+          <div className="flex flex-row items-center  gap-2 md:gap-4 mb-12  ">
+            <Link href="https://twitter.com/creativeanthony" target="_blank" className="font-sequelWide text-xl md:text-4xl  flex flex-row gap-0 justify-center items-center">
               <span className="hover:text-[#05B2FF]">TW</span> <span className="text-[#05B2FF]">.</span>
             </Link>
             <Link href="https://www.instagram.com/anthonydesigner/" target="_blank" className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center">
