@@ -94,20 +94,21 @@
 
 
 /* Modified Loader: Moves Up to Down, Slower, Dark Grey Color */
+ /* Responsive Vertical Loader */
 .loader {
   display: block;
-  --height-of-loader: 100px; /* Increased height for vertical movement */
   --loader-width: 4px; /* Narrower width */
   --loader-color: #333; /* Dark Grey */
   
   width: var(--loader-width);
-  height: var(--height-of-loader);
+  height: 100px; /* Default height for larger screens */
   border-radius: 30px;
   background-color: transparent;
   position: relative;
   overflow: hidden;
 }
 
+/* Loader animation */
 .loader::before {
   content: "";
   position: absolute;
@@ -117,9 +118,10 @@
   width: 100%;
   height: 0%;
   border-radius: 30px;
-  animation: moving 2s ease-in-out infinite; /* Slowed down animation */
+  animation: moving 2s ease-in-out infinite;
 }
 
+/* Keyframe Animation */
 @keyframes moving {
   50% {
     height: 100%;
@@ -129,4 +131,34 @@
     top: unset;
     bottom: 0;
   }
+}
+
+/* Responsiveness: Adjust height for different screen sizes */
+@media (max-width: 1024px) { /* Tablets */
+  .loader {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) { /* Smaller Tablets & Large Phones */
+  .loader {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+  .loader {
+    height: 40px;
+  }
+}
+
+@media (max-width: 320px) { /* Extra Small Phones */
+  .loader {
+    height: 30px;
+  }
+}
+
+
+.back-to-top {
+  cursor: url('/up-arrow.svg') 10 10, auto;
 }

@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center">
-      <h1 className="font-sequelWide text-2zxl sm:text-5xl md:text-6xl lg:text-6xl leading-tight uppercase">
+      <h1 className="font-sequelWide text-4xl sm:text-5xl md:text-6xl lg:text-6xl leading-tight uppercase">
         Shifting brands from<br />
         giving up to moving<br />
         forward.
@@ -19,7 +19,7 @@ export default function Hero() {
         <button
           onClick={scrollToClientsGrid}
           title="Scroll down"
-          className="loader h-8 md:h-14 w-[.5px] cursor-pointer"
+          className="loader h-6 md:h-14 w-[.5px] cursor-pointer"
         ></button>
       </div>
     </section>
