@@ -8,7 +8,7 @@ export default function BioSection() {
     <section className="min-h-screen pt-32 px-8 pb-16 bg-gray-100">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h1 className="font-sequelWide text-4xl sm:text-5xl md:text-5xl lg:text-6xl leading-tight uppercase mb-8">
+          <h1 className="font-sequelWide text-3xl sm:text-5xl md:text-5xl lg:text-6xl leading-tight uppercase mb-8">
             Competition<br />
             and creativity<br />
             runs hard in<br />

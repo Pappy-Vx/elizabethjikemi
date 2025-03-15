@@ -22,7 +22,7 @@ const clients = [
     name: "Nestea",
     logo: "https://web-assets.same.dev/383566247/2761186924.webp",
     url: "https://advictorem.agency/case-studies/nestea",
-    bgColor: "#00FFFF", // Aqua Blue
+    bgColor: "#00A9FF", // Aqua Blue
   },
   {
     name: "ESPN",

@@ -16,19 +16,19 @@ export default function Footer() {
         <div className="mb-16">
           <h3 className="text-sm uppercase mb-3 opacity-80">Get in touch</h3>
           <div className="flex gap-4 mb-12  ">
-            <Link href="https://twitter.com/creativeanthony" target="_blank" className="font-sequelWide text-4xl cursor-pointer">
+            <Link href="https://twitter.com/creativeanthony" target="_blank" className="font-sequelWide text-4xl cursor-pointer flex flex-row gap-0 justify-center items-center">
               <span className="hover:text-[#05B2FF]">TW</span> <span className="text-[#05B2FF]">.</span>
             </Link>
-            <Link href="https://www.instagram.com/anthonydesigner/" target="_blank" className="font-sequelWide text-2xl md:text-4xl">
+            <Link href="https://www.instagram.com/anthonydesigner/" target="_blank" className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center">
             <span className="hover:text-[#E112FC]">IG</span> <span className="text-[#E112FC]">.</span>
             </Link>
-            <Link href="https://www.linkedin.com/in/anthonywiktor/" target="_blank" className="font-sequelWide text-2xl md:text-4xl">
+            <Link href="https://www.linkedin.com/in/anthonywiktor/" target="_blank" className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center">
             <span className="hover:text-[#094290]">LN</span> <span className="text-[#094290]">.</span>
             </Link>
-            <Link href="https://www.behance.net/ad_victorem" target="_blank" className="font-sequelWide text-2xl md:text-4xl">
+            <Link href="https://www.behance.net/ad_victorem" target="_blank" className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center">
             <span className="hover:text-[#1F86FF]">BE</span> <span className="text-[#1F86FF]">.</span>
             </Link>
-            <Link href="https://medium.com/advictorem" target="_blank" className="font-sequelWide text-2xl md:text-4xl">
+            <Link href="https://medium.com/advictorem" target="_blank" className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center">
             <span className="hover:text-[#00A257]">M</span> <span className="text-[#00A257]">.</span>
             </Link>
           </div>
