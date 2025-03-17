@@ -29,7 +29,7 @@ export default function About() {
       {/* Foreground Content */}
       <Header />
       <AboutHero />
-      <BioSection />
+      {/* <BioSection /> */}
       <ExpertiseSection />
       <AffiliationsSection />
       <ClientsSection />
