@@ -48,7 +48,7 @@ export default function Header() {
       <nav>
         <Link
           href="/about"
-          className={`font-sequelWide tracking-widest uppercase text-sm hover:opacity-80 transition duration-300 ${
+          className={`font-tungsten font-bold tracking-[.5rem] uppercase text-md hover:opacity-80 transition duration-300 ${
             isScrolled ? "text-white" : "text-black"
           }`}
         >

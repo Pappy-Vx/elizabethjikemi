@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="w-full bg-black text-white p-8 pt-16 z-[999] relative">
       <div className="max-w-6xl mx-auto">
         <div className="mb-16">
-          <h3 className="text-sm uppercase mb-3 opacity-80">Get in touch</h3>
+          <h3 className="font-tungsten tracking-[.7rem] text-lg uppercase mb-3 ">Get in touch</h3>
           <div className="flex flex-row items-center  gap-2 md:gap-4 mb-12  ">
             <Link
               href="https://twitter.com/creativeanthony"
@@ -58,21 +58,21 @@ export default function Footer() {
             </Link>
           </div>
 
-          <h2 className="font-sequelWide text-2xl md:text-6xl uppercase mb-4">
+          <h2 className="font-sequelWide text-2xl md:text-4xl uppercase mb-4">
             Want to move forward?
           </h2>
           <Link
             href="mailto:hello@anthonydesigner.com"
-            className="font-sequelWide text-2xl md:text-6xl uppercase underline hover:opacity-80 transition-opacity"
+            className="font-sequelWide text-2xl md:text-4xl uppercase underline hover:opacity-80 transition-opacity"
           >
             Drop a line.
           </Link>
         </div>
 
-        <div className="flex justify-end">
+        <div className=" flex justify-end ">
           <button
             onClick={scrollToTop}
-            className="back-to-top font-sequelWide text-xs uppercase opacity-70 hover:opacity-100 transition-opacity"
+            className="back-to-top font-300 font-tungsten tracking-[.7rem] text-md uppercase opacity-70 hover:opacity-100 transition-opacity"
           >
             Back to top
           </button>

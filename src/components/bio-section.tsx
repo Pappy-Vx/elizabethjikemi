@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function BioSection() {
   return (
-    <section className="min-h-screen pt-32 px-8 pb-16 bg-[#000000CC] z-10 relative text-white flex items-start">
+    <section className="min-h-screen  px-8 pb-16 bg-[#000000CC] z-10 relative text-white flex items-start">
       <div className="w-full mx-auto flex flex-row justify-between ">
         <div className='w-[60%]'>
          
