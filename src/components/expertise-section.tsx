@@ -2,7 +2,7 @@
 
 export default function ExpertiseSection() {
   return (
-    <section className="py-20 bg-white px-8">
+    <section className="py-20 bg-white z-10 relative px-8 text-black">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-16">Expertise</h2>
 

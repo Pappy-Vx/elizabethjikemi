@@ -2,9 +2,9 @@
 
 export default function ClientsSection() {
   return (
-    <section className="py-20 bg-black px-8 text-white">
+    <section className="py-20 bg-[#000000CC] relative z-10 px-8 text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-16 opacity-20">Clients</h2>
+        <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-16 ">Clients</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
           {/* Client logos - adding a few examples */}

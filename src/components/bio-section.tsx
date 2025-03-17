@@ -1,21 +1,14 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function BioSection() {
   return (
-    <section className="min-h-screen pt-32 px-8 pb-16 bg-gray-100">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h1 className="font-sequelWide text-3xl sm:text-5xl md:text-5xl lg:text-6xl leading-tight uppercase mb-8">
-            Competition<br />
-            and creativity<br />
-            runs hard in<br />
-            his veins.
-          </h1>
-
-          <p className="text-base mb-4">
+    <section className="min-h-screen pt-32 px-8 pb-16 bg-[#000000CC] z-10 relative text-white flex items-start">
+      <div className="w-full mx-auto flex flex-row justify-between ">
+        <div className='w-[60%]'>
+         
+          <p className="text-4xl font-sourceSerif  mb-4">
             Given that Anthony grew up in Chicago rooting for sports legends like <strong>MICHAEL JORDAN</strong> and <strong>WALTER PAYTON</strong>, that's no surprise.
           </p>
 
@@ -41,19 +34,11 @@ export default function BioSection() {
         </div>
 
         <div>
-          <div className="relative w-full h-[500px] md:h-[600px]">
-            <Image
-              src="https://web-assets.same.dev/862165757/3602889100.webp"
-              alt="Anthony Wiktor"
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
-          </div>
 
-          <div className="grid grid-cols-2 gap-8 mt-8">
+
+          <div className=" mt-8">
             <div>
-              <h3 className="font-sequelWide text-sm mb-2 uppercase">Education</h3>
+              <h3 className="font-tungsten text-sm mb-2 uppercase">Education</h3>
               <p className="uppercase text-sm font-bold mb-1">Woodbury University</p>
               <p className="text-sm text-gray-700 mb-4">BFA Graphic Design, 2006</p>
             </div>

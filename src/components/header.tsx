@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full fixed top-0 z-50 px-8 py-6 flex justify-between items-center bg-transparent transition-colors duration-700 ${
+      className={`w-full fixed top-0 z-50 px-8 py-6 flex justify-between items-center bg-transparent transition-colors duration-700 z-[999] ${
         isScrolled ? "text-white" : "text-black"
       }`}
     >
