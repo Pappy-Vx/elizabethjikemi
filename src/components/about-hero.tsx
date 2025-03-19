@@ -22,7 +22,7 @@ export default function AboutHero() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   return (
     <motion.div
       className={`min-h-screen transition-colors duration-700 ease-in-out ${bgColor} relative z-50`}
@@ -42,35 +42,41 @@ export default function AboutHero() {
         <div className="w-full mx-auto flex flex-col items-center md:flex-row md:justify-between ">
           <div className="w-full md:w-[55%]">
             <p className="text-xl font-sourceSerif  mb-4">
-              Given that Anthony grew up in Chicago rooting for sports legends
-              like <span className="font-sequelWide text-sm">MICHAEL JORDAN</span> and{" "}
-              <span className="font-sequelWide text-sm">WALTER PAYTON</span>, that's no surprise.
+              Given that Elizabeth grew up in Nigeria rooting for sports legends
+              like{" "}
+              <span className="font-sequelWide text-sm">Austin Okochaa</span>{" "}
+              and <span className="font-sequelWide text-sm">Thiery Henri</span>
+              , that's no surprise.
             </p>
             <br />
             <p className="text-xl font-sourceSerif mb-4">
-              Anthony brings that competitive spirit to his branding and design
-              work, leading to shelves full of awards, and being listed in Web
-              Designer Magazine's <span className="font-sequelWide text-sm">HOT 100</span> list twice.
+              Elizabeth brings that competitive and strategic spirit to her passion and work place
+              , making her follow in footstep great legends in chess like,{" "}
+              <span className="font-sequelWide text-sm">Polgar Sisters</span> list
+              twice.
             </p>
             <br />
             <p className="text-xl font-sourceSerif mb-4">
               Case in point: Anthony's recent work for tech startup Motiv won a{" "}
-              <span className="font-sequelWide text-sm">WEBBY AWARD</span> and helped generate the company's
-              first thousand sales with almost zero advertising.
+              <span className="font-sequelWide text-sm">WEBBY AWARD</span> and
+              helped generate the company's first thousand sales with almost
+              zero advertising.
             </p>
             <br />
             <p className="text-xl font-sourceSerif mb-6">
               In addition to helping clients like ESPN and Netflix rise to
               victory against their competitors, Anthony shares his passion with
               future design professionals, leading creative workshops at{" "}
-              <span className="font-sequelWide text-sm">USC's</span> Annenberg Digital Lounge, serving on the
-              board of AIGA Los Angeles and as an expert panelist for the annual
-              GlobalTrend Marketing Awards.
+              <span className="font-sequelWide text-sm">USC's</span> Annenberg
+              Digital Lounge, serving on the board of AIGA Los Angeles and as an
+              expert panelist for the annual GlobalTrend Marketing Awards.
             </p>
             <br />
             <Link
-              href="/static/anthony-wiktor-resume-2019-719528748d2e5155aaf7ac8516f6c417.pdf"
+              href="/Elizabeth-Jikiemi-Resume.pdf"
+              // download="Elizbeth-Jikiemi-Resume.pdf"
               target="_blank"
+              // rel="noopener noreferrer"
               className="inline-block font-sequelWide text-sm uppercase underline mb-8 hover:opacity-80 transition-opacity"
             >
               Download Resume
@@ -98,7 +104,9 @@ export default function AboutHero() {
                 <p className="text-lg font-sequelWide text-white ">
                   Principal, Creative Director
                 </p>
-                <p className="text-lg font-sequelWide text-white mb-4">AD VICTOREM, 2017-</p>
+                <p className="text-lg font-sequelWide text-white mb-4">
+                  AD VICTOREM, 2017-
+                </p>
 
                 <p className="text-lg font-sequelWide text-white ">
                   Creative Director
@@ -127,6 +135,51 @@ export default function AboutHero() {
                 <p className="text-lg font-sequelWide text-white mb-4">
                   SOTHEBY'S REAL ESTATE, 2006-2008
                 </p>
+              </div>
+              <h3 className="font-tungsten tracking-[.5rem] text-md uppercase mb-3 ">
+                Get in touch
+              </h3>
+              <div className="flex flex-row items-center  gap-2 md:gap-4 mb-12  ">
+                <Link
+                  href="https://x.com/blackzeuss?s=21"
+                  target="_blank"
+                  className="font-sequelWide text-md md:text-xl  flex flex-row gap-0 justify-center items-center"
+                >
+                  <span className="hover:text-[#05B2FF]">TW</span>{" "}
+                  <span className="text-[#05B2FF]">.</span>
+                </Link>
+                <Link
+                  href="https://pin.it/1jkDSfZzg"
+                  target="_blank"
+                  className="font-sequelWide text-md md:text-xl flex flex-row gap-0 justify-center items-center"
+                >
+                  <span className="hover:text-[#FF0000]">PI</span>{" "}
+                  <span className="text-[#FF0000]">.</span>
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/jikiemielizabeth?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  className="font-sequelWide text-md md:text-xl flex flex-row gap-0 justify-center items-center"
+                >
+                  <span className="hover:text-[#094290]">LN</span>{" "}
+                  <span className="text-[#094290]">.</span>
+                </Link>
+                <Link
+                  href="https://www.facebook.com/share/1MVeziBjer/?mibextid=wwXIfr"
+                  target="_blank"
+                  className="font-sequelWide text-md md:text-xl flex flex-row gap-0 justify-center items-center"
+                >
+                  <span className="hover:text-[#1F86FF]">FB</span>{" "}
+                  <span className="text-[#1F86FF]">.</span>
+                </Link>
+                <Link
+                  href="https://medium.com/@elizabethjk"
+                  target="_blank"
+                  className="font-sequelWide text-md md:text-xl flex flex-row gap-0 justify-center items-center"
+                >
+                  <span className="hover:text-[#00A257]">M</span>{" "}
+                  <span className="text-[#00A257]">.</span>
+                </Link>
               </div>
             </div>
           </div>

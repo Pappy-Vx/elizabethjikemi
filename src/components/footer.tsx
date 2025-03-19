@@ -17,7 +17,7 @@ export default function Footer() {
           <h3 className="font-tungsten tracking-[.7rem] text-lg uppercase mb-3 ">Get in touch</h3>
           <div className="flex flex-row items-center  gap-2 md:gap-4 mb-12  ">
             <Link
-              href="https://twitter.com/creativeanthony"
+              href="https://x.com/blackzeuss?s=21"
               target="_blank"
               className="font-sequelWide text-xl md:text-4xl  flex flex-row gap-0 justify-center items-center"
             >
@@ -25,15 +25,15 @@ export default function Footer() {
               <span className="text-[#05B2FF]">.</span>
             </Link>
             <Link
-              href="https://www.instagram.com/anthonydesigner/"
+              href="https://pin.it/1jkDSfZzg"
               target="_blank"
               className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center"
             >
-              <span className="hover:text-[#E112FC]">IG</span>{" "}
-              <span className="text-[#E112FC]">.</span>
+              <span className="hover:text-[#FF0000]">PI</span>{" "}
+              <span className="text-[#FF0000]">.</span>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/anthonywiktor/"
+              href="https://www.linkedin.com/in/jikiemielizabeth?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               target="_blank"
               className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center"
             >
@@ -41,15 +41,15 @@ export default function Footer() {
               <span className="text-[#094290]">.</span>
             </Link>
             <Link
-              href="https://www.behance.net/ad_victorem"
+              href="https://www.facebook.com/share/1MVeziBjer/?mibextid=wwXIfr"
               target="_blank"
               className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center"
             >
-              <span className="hover:text-[#1F86FF]">BE</span>{" "}
+              <span className="hover:text-[#1F86FF]">FB</span>{" "}
               <span className="text-[#1F86FF]">.</span>
             </Link>
             <Link
-              href="https://medium.com/advictorem"
+              href="https://medium.com/@elizabethjk"
               target="_blank"
               className="font-sequelWide text-xl md:text-4xl flex flex-row gap-0 justify-center items-center"
             >
@@ -62,7 +62,7 @@ export default function Footer() {
             Want to move forward?
           </h2>
           <Link
-            href="mailto:hello@anthonydesigner.com"
+            href="mailto:elizabethjikiemi@yahoo.com"
             className="font-sequelWide text-2xl md:text-4xl uppercase underline hover:opacity-80 transition-opacity"
           >
             Drop a line.
