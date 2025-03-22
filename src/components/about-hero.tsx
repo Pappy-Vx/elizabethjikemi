@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutHero() {
   const [bgColor, setBgColor] = useState("bg-transparent text-black");
@@ -44,16 +45,45 @@ export default function AboutHero() {
             <p className="text-xl font-sourceSerif  mb-4">
               Given that Elizabeth grew up in Nigeria rooting for sports legends
               like{" "}
-              <span className="font-sequelWide text-sm">Austin Okochaa</span>{" "}
-              and <span className="font-sequelWide text-sm">Thiery Henri</span>
-              , that's no surprise.
+              <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">
+                Austin Okochaa
+              </span>
+              <Image
+                src="/jayjay.gif"
+                alt="Image"
+                className="hover-image"
+                width={300}
+                height={400}
+                style={{ objectFit: "cover", pointerEvents: "none", }}
+                priority
+              />{" "}</span>
+              
+              and <span className="relative"> <span className="text-link font-sequelWide text-sm cursor-pointer">Thierry Henry</span>               <Image
+                src="/henry.gif"
+                alt="Image"
+                className="hover-image"
+                width={300}
+                height={400}
+                style={{ objectFit: "cover", pointerEvents: "none", }}
+                priority
+              />{" "}</span> ,
+              that's no surprise.
             </p>
             <br />
             <p className="text-xl font-sourceSerif mb-4">
-              Elizabeth brings that competitive and strategic spirit to her passion and work place
-              , making her follow in footstep great legends in chess like,{" "}
-              <span className="font-sequelWide text-sm">Polgar Sisters</span> list
-              twice.
+              Elizabeth brings that competitive and strategic spirit to her
+              passion and work place , making her follow in footstep great
+              legends in chess like,{" "}
+              <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">Polgar Sisters</span>{" "}              <Image
+                src="/polgar.jpg"
+                alt="Image"
+                className="hover-image"
+                width={300}
+                height={400}
+                style={{ objectFit: "cover", pointerEvents: "none", }}
+                priority
+              />{" "}</span>
+              list twice.
             </p>
             <br />
             <p className="text-xl font-sourceSerif mb-4">

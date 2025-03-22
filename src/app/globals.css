@@ -163,3 +163,20 @@
 .back-to-top {
   cursor: url('/arrow-up.png') 16 16,  auto;
 }
+
+.container {
+  position: relative; /* Needed for absolute positioning of the image */
+}
+
+.hover-image {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  /* Or your desired height */
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.3s ease; /* Add a smooth transition */
+}
+
+.text-link:hover + .hover-image {
+  opacity: 1; /* Make the image visible on hover */
+}
