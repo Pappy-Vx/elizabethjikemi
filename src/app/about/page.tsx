@@ -1,7 +1,4 @@
-"use client";
-
-
-import BioSection from '@/components/bio-section';
+import type { Metadata } from "next"
 import ExpertiseSection from '@/components/expertise-section';
 import AffiliationsSection from '@/components/affiliations-section';
 import ClientsSection from '@/components/clients-section';
@@ -10,9 +7,12 @@ import Header from "@/components/header";
 import AboutHero from "@/components/about-hero";
 import Image from "next/image";
 
-export default function About() {
-  
+export const metadata = {
+     title: 'About • Elizabeth Jikemi Award-Winning Project Manager and NGO Specialist',
+     description: 'Elizabeth Jikemi is a Super Award-Winning Project Manager and NGO Specialist based in Indiana specializing in branding, design, interactive, and advertising to help challenger brands break through the clutter and outsmart the competition.',
+   }
 
+export default function About() {
   return (
 <>
       {/* Fixed Background Image */}
