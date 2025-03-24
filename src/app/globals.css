@@ -180,3 +180,15 @@
 .text-link:hover + .hover-image {
   opacity: 1; /* Make the image visible on hover */
 }
+
+.currently {
+  fill: "transparent";
+  stroke-width: 0.1;
+  stroke: #fff;
+}
+
+.expertise {
+  fill: "transparent";
+  stroke-width: 0.1;
+  stroke: #000;
+}

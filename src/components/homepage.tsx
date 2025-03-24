@@ -6,12 +6,42 @@ import Image from "next/image";
 import Link from "next/link";
 
 const clients = [
-  { name: "Motiv Ring", logo: "https://web-assets.same.dev/89360673/2062392507.webp", url: "https://advictorem.agency/case-studies/motiv-ring", bgColor: "#2E2E2E" },
-  { name: "AC Hotels", logo: "https://web-assets.same.dev/3993265427/2075004331.webp", url: "https://advictorem.agency/case-studies/ac-hotels", bgColor: "#D3D3D3" },
-  { name: "Nestea", logo: "https://web-assets.same.dev/383566247/2761186924.webp", url: "https://advictorem.agency/case-studies/nestea", bgColor: "#00A9FF" },
-  { name: "ESPN", logo: "https://web-assets.same.dev/1616286318/3692604017.webp", url: "https://advictorem.agency/case-studies/espn", bgColor: "#FF0000" },
-  { name: "LAFC", logo: "https://web-assets.same.dev/825918791/1060828862.webp", url: "https://advictorem.agency/case-studies/lafc", bgColor: "#000000" },
-  { name: "FOX", logo: "https://web-assets.same.dev/1518392135/3384299336.webp", url: "https://advictorem.agency/case-studies/fox-digital", bgColor: "#FFD700" },
+  {
+    name: "Motiv Ring",
+    logo: "https://web-assets.same.dev/89360673/2062392507.webp",
+    url: "https://advictorem.agency/case-studies/motiv-ring",
+    bgColor: "#2E2E2E",
+  },
+  {
+    name: "AC Hotels",
+    logo: "https://web-assets.same.dev/3993265427/2075004331.webp",
+    url: "https://advictorem.agency/case-studies/ac-hotels",
+    bgColor: "#D3D3D3",
+  },
+  {
+    name: "Nestea",
+    logo: "https://web-assets.same.dev/383566247/2761186924.webp",
+    url: "https://advictorem.agency/case-studies/nestea",
+    bgColor: "#00A9FF",
+  },
+  {
+    name: "ESPN",
+    logo: "https://web-assets.same.dev/1616286318/3692604017.webp",
+    url: "https://advictorem.agency/case-studies/espn",
+    bgColor: "#FF0000",
+  },
+  {
+    name: "LAFC",
+    logo: "https://web-assets.same.dev/825918791/1060828862.webp",
+    url: "https://advictorem.agency/case-studies/lafc",
+    bgColor: "#000000",
+  },
+  {
+    name: "FOX",
+    logo: "https://web-assets.same.dev/1518392135/3384299336.webp",
+    url: "https://advictorem.agency/case-studies/fox-digital",
+    bgColor: "#FFD700",
+  },
 ];
 
 export default function Homepage() {
@@ -43,13 +73,18 @@ export default function Homepage() {
   return (
     <motion.div
       className="min-h-screen transition-colors duration-700 ease-in-out"
-      style={{ backgroundColor: bgColor, color: bgColor === "#000000" ? "white" : "black" }} // Adjust text color based on background
+      style={{
+        backgroundColor: bgColor,
+        color: bgColor === "#000000" ? "white" : "black",
+      }} // Adjust text color based on background
     >
       {/* Hero Section */}
       <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center">
         <h1 className="font-sequelWide text-4xl sm:text-5xl md:text-6xl lg:text-6xl leading-tight uppercase">
-          Shifting brands from<br />
-          giving up to moving<br />
+          Shifting brands from
+          <br />
+          giving up to moving
+          <br />
           forward.
         </h1>
         <div className="flex items-center justify-center mt-8">
@@ -62,14 +97,23 @@ export default function Homepage() {
       </section>
 
       {/* Clients Section */}
-      <section className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700" id="clientsgrid">
+      <section
+        className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
+        id="clientsgrid"
+      >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {clients.map((client, index) => (
             <Link key={index} href={client.url} target="_blank">
               <motion.div
                 className="relative group h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A]"
                 onMouseEnter={() => setBgColor(client.bgColor)}
-                onMouseLeave={() => setBgColor(window.scrollY > window.innerHeight * 0.1 ? "#000000" : "#FFFFFF")}
+                onMouseLeave={() =>
+                  setBgColor(
+                    window.scrollY > window.innerHeight * 0.1
+                      ? "#000000"
+                      : "#FFFFFF"
+                  )
+                }
               >
                 {/* Client Name */}
                 <p className="absolute top-40 text-white text-lg uppercase tracking-widest opacity-100 transition-opacity duration-500">
@@ -96,31 +140,47 @@ export default function Homepage() {
           ))}
         </div>
       </section>
-      <section className="w-full  py-24 md:py-32 lg:py-40 relative">
-      <div className="max-w-6xl mx-auto px-8">
-        <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-12 md:mb-24">Currently</h2>
-
-        <div className="max-w-2xl">
-          <h3 className="font-sequelWide text-4xl md:text-5xl lg:text-6xl uppercase leading-tight mb-8">
-            Helping<br />
-            Brands Win.
-          </h3>
-
-          <div className="flex justify-end mb-16">
-            <Link
-              href="https://advictorem.agency"
-              target="_blank"
-              className="inline-block font-sequelWide tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
+      <section className="w-full  py-24 md:py-32 lg:py-30 relative">
+        <div className="max-w-6xl mx-auto px-8">
+          <h2>
+            <svg
+              width="660"
+              height="260"
+              viewBox="0 0 56 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              
             >
-              Visit Ad Victorem
-            </Link>
-          </div>
-        </div>
+              <path
+                d="M5.82 7.416C5.82 7.704 5.748 7.968 5.604 8.208C5.46 8.448 5.268 8.64 5.028 8.784C4.788 8.928 4.524 9 4.236 9H2.076C1.788 9 1.52 8.928 1.272 8.784C1.032 8.64 0.84 8.448 0.696 8.208C0.552 7.968 0.48 7.704 0.48 7.416V2.484C0.48 2.188 0.552 1.92 0.696 1.68C0.84 1.44 1.032 1.248 1.272 1.104C1.52 0.959999 1.788 0.887999 2.076 0.887999H4.236C4.524 0.887999 4.788 0.959999 5.028 1.104C5.268 1.248 5.46 1.44 5.604 1.68C5.748 1.92 5.82 2.188 5.82 2.484V2.808C5.82 2.96 5.768 3.088 5.664 3.192C5.56 3.296 5.428 3.348 5.268 3.348H4.944C4.792 3.348 4.66 3.296 4.548 3.192C4.444 3.088 4.392 2.96 4.392 2.808V2.484C4.392 2.372 4.34 2.316 4.236 2.316H2.076C1.972 2.316 1.92 2.372 1.92 2.484V7.416C1.92 7.456 1.936 7.496 1.968 7.536C2 7.568 2.036 7.584 2.076 7.584H4.236C4.276 7.584 4.312 7.568 4.344 7.536C4.376 7.496 4.392 7.456 4.392 7.416V7.056C4.392 6.904 4.444 6.776 4.548 6.672C4.66 6.56 4.792 6.504 4.944 6.504H5.268C5.428 6.504 5.56 6.56 5.664 6.672C5.768 6.776 5.82 6.904 5.82 7.056V7.416ZM12.1364 7.416C12.1364 7.704 12.0644 7.968 11.9204 8.208C11.7764 8.448 11.5844 8.64 11.3444 8.784C11.1044 8.928 10.8404 9 10.5524 9H8.39241C8.10441 9 7.83641 8.928 7.58841 8.784C7.34841 8.64 7.15641 8.448 7.01241 8.208C6.86841 7.968 6.79641 7.704 6.79641 7.416V1.44C6.79641 1.28 6.84841 1.148 6.95241 1.044C7.06441 0.939999 7.19641 0.887999 7.34841 0.887999H7.68441C7.83641 0.887999 7.96441 0.939999 8.06841 1.044C8.18041 1.148 8.23641 1.28 8.23641 1.44V7.416C8.23641 7.456 8.25241 7.496 8.28441 7.536C8.31641 7.568 8.35241 7.584 8.39241 7.584H10.5524C10.5924 7.584 10.6284 7.568 10.6604 7.536C10.6924 7.496 10.7084 7.456 10.7084 7.416V1.44C10.7084 1.28 10.7604 1.148 10.8644 1.044C10.9764 0.939999 11.1084 0.887999 11.2604 0.887999H11.5844C11.7444 0.887999 11.8764 0.939999 11.9804 1.044C12.0844 1.148 12.1364 1.28 12.1364 1.44V7.416ZM18.5488 8.244C18.6288 8.428 18.6168 8.596 18.5128 8.748C18.3928 8.916 18.2408 9 18.0568 9H17.6968C17.5928 9 17.4888 8.968 17.3848 8.904C17.2888 8.84 17.2208 8.76 17.1808 8.664L16.0528 5.964C16.0128 5.868 15.9408 5.82 15.8368 5.82H14.7208C14.6168 5.82 14.5648 5.872 14.5648 5.976V8.448C14.5648 8.6 14.5088 8.732 14.3968 8.844C14.2928 8.948 14.1648 9 14.0128 9H13.6768C13.5248 9 13.3968 8.948 13.2928 8.844C13.1968 8.732 13.1488 8.6 13.1488 8.448V1.44C13.1488 1.28 13.1968 1.148 13.2928 1.044C13.3968 0.939999 13.5248 0.887999 13.6768 0.887999H16.9288C17.2168 0.887999 17.4808 0.959999 17.7208 1.104C17.9608 1.248 18.1528 1.44 18.2968 1.68C18.4408 1.92 18.5128 2.188 18.5128 2.484V4.236C18.5128 4.548 18.4288 4.832 18.2608 5.088C18.1008 5.336 17.8888 5.528 17.6248 5.664C17.5928 5.672 17.5688 5.7 17.5528 5.748C17.5368 5.788 17.5408 5.828 17.5648 5.868L18.5488 8.244ZM17.0848 4.236V2.484C17.0848 2.372 17.0328 2.316 16.9288 2.316H14.7208C14.6168 2.316 14.5648 2.368 14.5648 2.472V4.236C14.5648 4.34 14.6168 4.392 14.7208 4.392H16.9288C17.0328 4.392 17.0848 4.34 17.0848 4.236ZM25.0176 8.244C25.0976 8.428 25.0856 8.596 24.9816 8.748C24.8616 8.916 24.7096 9 24.5256 9H24.1656C24.0616 9 23.9576 8.968 23.8536 8.904C23.7576 8.84 23.6896 8.76 23.6496 8.664L22.5216 5.964C22.4816 5.868 22.4096 5.82 22.3056 5.82H21.1896C21.0856 5.82 21.0336 5.872 21.0336 5.976V8.448C21.0336 8.6 20.9776 8.732 20.8656 8.844C20.7616 8.948 20.6336 9 20.4816 9H20.1456C19.9936 9 19.8656 8.948 19.7616 8.844C19.6656 8.732 19.6176 8.6 19.6176 8.448V1.44C19.6176 1.28 19.6656 1.148 19.7616 1.044C19.8656 0.939999 19.9936 0.887999 20.1456 0.887999H23.3976C23.6856 0.887999 23.9496 0.959999 24.1896 1.104C24.4296 1.248 24.6216 1.44 24.7656 1.68C24.9096 1.92 24.9816 2.188 24.9816 2.484V4.236C24.9816 4.548 24.8976 4.832 24.7296 5.088C24.5696 5.336 24.3576 5.528 24.0936 5.664C24.0616 5.672 24.0376 5.7 24.0216 5.748C24.0056 5.788 24.0096 5.828 24.0336 5.868L25.0176 8.244ZM23.5536 4.236V2.484C23.5536 2.372 23.5016 2.316 23.3976 2.316H21.1896C21.0856 2.316 21.0336 2.368 21.0336 2.472V4.236C21.0336 4.34 21.0856 4.392 21.1896 4.392H23.3976C23.5016 4.392 23.5536 4.34 23.5536 4.236ZM31.2583 8.448C31.2583 8.6 31.2023 8.732 31.0903 8.844C30.9863 8.948 30.8623 9 30.7183 9H26.5903C26.4463 9 26.3183 8.948 26.2063 8.844C26.1023 8.732 26.0503 8.6 26.0503 8.448V1.44C26.0503 1.28 26.1023 1.148 26.2063 1.044C26.3183 0.939999 26.4463 0.887999 26.5903 0.887999H30.7183C30.8623 0.887999 30.9863 0.939999 31.0903 1.044C31.2023 1.148 31.2583 1.28 31.2583 1.44V1.764C31.2583 1.916 31.2023 2.048 31.0903 2.16C30.9863 2.264 30.8623 2.316 30.7183 2.316H27.6223C27.5263 2.316 27.4783 2.368 27.4783 2.472V4.068C27.4783 4.18 27.5263 4.236 27.6223 4.236H30.2863C30.4463 4.236 30.5783 4.288 30.6823 4.392C30.7863 4.496 30.8383 4.624 30.8383 4.776V5.112C30.8383 5.264 30.7863 5.396 30.6823 5.508C30.5783 5.612 30.4463 5.664 30.2863 5.664H27.6223C27.5263 5.664 27.4783 5.712 27.4783 5.808V7.428C27.4783 7.532 27.5263 7.584 27.6223 7.584H30.7183C30.8623 7.584 30.9863 7.636 31.0903 7.74C31.2023 7.844 31.2583 7.976 31.2583 8.136V8.448ZM37.7104 8.448C37.7104 8.6 37.6544 8.732 37.5424 8.844C37.4384 8.948 37.3104 9 37.1584 9H36.8104C36.5944 9 36.4344 8.908 36.3304 8.724L33.7744 4.296C33.7584 4.264 33.7344 4.256 33.7024 4.272C33.6704 4.28 33.6544 4.296 33.6544 4.32V8.448C33.6544 8.6 33.5984 8.732 33.4864 8.844C33.3824 8.948 33.2584 9 33.1144 9H32.7784C32.6264 9 32.4944 8.948 32.3824 8.844C32.2784 8.732 32.2264 8.6 32.2264 8.448V1.44C32.2264 1.28 32.2784 1.148 32.3824 1.044C32.4944 0.939999 32.6264 0.887999 32.7784 0.887999H33.1264C33.3424 0.887999 33.5024 0.979999 33.6064 1.164L36.1624 5.592C36.1864 5.624 36.2104 5.636 36.2344 5.628C36.2664 5.62 36.2824 5.6 36.2824 5.568V1.44C36.2824 1.28 36.3344 1.148 36.4384 1.044C36.5504 0.939999 36.6824 0.887999 36.8344 0.887999H37.1584C37.3104 0.887999 37.4384 0.939999 37.5424 1.044C37.6544 1.148 37.7104 1.28 37.7104 1.44V8.448ZM44.0351 1.764C44.0351 1.916 43.9831 2.048 43.8791 2.16C43.7751 2.264 43.6431 2.316 43.4831 2.316H42.2231C42.1191 2.316 42.0671 2.368 42.0671 2.472V8.448C42.0671 8.6 42.0111 8.732 41.8991 8.844C41.7951 8.948 41.6671 9 41.5151 9H41.2031C41.0511 9 40.9191 8.948 40.8071 8.844C40.7031 8.732 40.6511 8.6 40.6511 8.448V2.472C40.6511 2.368 40.5991 2.316 40.4951 2.316H39.2231C39.0711 2.316 38.9391 2.264 38.8271 2.16C38.7231 2.048 38.6711 1.916 38.6711 1.764V1.44C38.6711 1.28 38.7231 1.148 38.8271 1.044C38.9391 0.939999 39.0711 0.887999 39.2231 0.887999H43.4831C43.6431 0.887999 43.7751 0.939999 43.8791 1.044C43.9831 1.148 44.0351 1.28 44.0351 1.44V1.764ZM50.2075 8.448C50.2075 8.6 50.1515 8.732 50.0395 8.844C49.9355 8.948 49.8115 9 49.6675 9H45.5395C45.3955 9 45.2675 8.948 45.1555 8.844C45.0515 8.732 44.9995 8.6 44.9995 8.448V1.44C44.9995 1.28 45.0515 1.148 45.1555 1.044C45.2675 0.939999 45.3955 0.887999 45.5395 0.887999H45.8755C46.0275 0.887999 46.1555 0.939999 46.2595 1.044C46.3715 1.148 46.4275 1.28 46.4275 1.44V7.428C46.4275 7.532 46.4755 7.584 46.5715 7.584H49.6675C49.8115 7.584 49.9355 7.636 50.0395 7.74C50.1515 7.844 50.2075 7.976 50.2075 8.136V8.448ZM55.6078 1.164C55.7038 1.348 55.6998 1.536 55.5958 1.728L53.3518 5.376C53.3198 5.416 53.3038 5.484 53.3038 5.58V8.448C53.3038 8.6 53.2478 8.732 53.1358 8.844C53.0318 8.948 52.9038 9 52.7518 9H52.4158C52.2638 9 52.1318 8.948 52.0198 8.844C51.9158 8.732 51.8638 8.6 51.8638 8.448V5.568C51.8638 5.48 51.8438 5.416 51.8038 5.376L49.5718 1.728C49.4678 1.528 49.4638 1.344 49.5598 1.176C49.6638 0.983999 49.8238 0.887999 50.0398 0.887999H50.4238C50.6398 0.887999 50.7998 0.975999 50.9038 1.152C50.9918 1.288 51.1238 1.504 51.2998 1.8C51.4758 2.096 51.6718 2.42 51.8878 2.772C52.1038 3.116 52.3078 3.444 52.4998 3.756C52.5158 3.788 52.5398 3.804 52.5718 3.804C52.6118 3.804 52.6438 3.788 52.6678 3.756C52.8838 3.404 53.0958 3.06 53.3038 2.724C53.5118 2.38 53.6998 2.072 53.8678 1.8C54.0438 1.52 54.1758 1.304 54.2638 1.152C54.3678 0.975999 54.5238 0.887999 54.7318 0.887999H55.1158C55.3398 0.887999 55.5038 0.979999 55.6078 1.164Z"
+                fill=""
+                className="currently"
+              />
+            </svg>
+          </h2>
 
-        {/* Video/background element would be here in the original */}
-        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tr from-black to-zinc-900 opacity-30"></div>
-      </div>
-    </section>
+          <div className="max-w-2xl">
+            <h3 className="font-sequelWide text-4xl md:text-5xl lg:text-6xl uppercase leading-tight mb-8">
+              Helping
+              <br />
+              Brands Win.
+            </h3>
+
+            <div className="flex justify-end mb-16">
+              <Link
+                href="https://advictorem.agency"
+                target="_blank"
+                className="inline-block font-sequelWide tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
+              >
+                Visit Ad Victorem
+              </Link>
+            </div>
+          </div>
+
+          {/* Video/background element would be here in the original */}
+          <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tr from-black to-zinc-900 opacity-30"></div>
+        </div>
+      </section>
     </motion.div>
   );
 }

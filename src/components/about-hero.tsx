@@ -45,8 +45,8 @@ export default function AboutHero() {
             <p className="text-xl font-sourceSerif  mb-4">
               Given that Elizabeth grew up in Nigeria rooting for sports legends
               like{" "}
-              <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">
-                Austin Okochaa
+              <br /> <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">
+                Jay Jay Okochaa
               </span>
               <Image
                 src="/jayjay.gif"
@@ -74,7 +74,7 @@ export default function AboutHero() {
               Elizabeth brings that competitive and strategic spirit to her
               passion and work place , making her follow in footstep great
               legends in chess like,{" "}
-              <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">Polgar Sisters</span>{" "}              <Image
+              <br/> <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">Polgar Sisters</span>{" "}              <Image
                 src="/polgar.jpg"
                 alt="Image"
                 className="hover-image"
