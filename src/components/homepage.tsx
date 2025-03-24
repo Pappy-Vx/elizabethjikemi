@@ -80,7 +80,7 @@ export default function Homepage() {
     >
       {/* Hero Section */}
       <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center">
-        <h1 className="font-sequelWide text-4xl sm:text-5xl md:text-6xl lg:text-6xl leading-tight uppercase">
+        <h1 className="font-roadRadio text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight uppercase">
           Shifting brands from
           <br />
           giving up to moving
@@ -161,7 +161,7 @@ export default function Homepage() {
           </h2>
 
           <div className="max-w-2xl">
-            <h3 className="font-sequelWide text-4xl md:text-5xl lg:text-6xl uppercase leading-tight mb-8">
+            <h3 className="font-roadRadio text-4xl md:text-5xl lg:text-7xl uppercase leading-tight mb-8">
               Helping
               <br />
               Brands Win.
@@ -171,7 +171,7 @@ export default function Homepage() {
               <Link
                 href="https://advictorem.agency"
                 target="_blank"
-                className="inline-block font-sequelWide tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
+                className="inline-block font-roadRadio tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
               >
                 Visit Ad Victorem
               </Link>

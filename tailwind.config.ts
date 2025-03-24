@@ -12,6 +12,7 @@ export default {
             fontFamily: {
                 sequelWide: ["'Sequel Wide'", "sans-serif"],
                 tungsten: ["'Tungsten Medium'", "sans-serif"],
+                roadRadio: ["'Road Radio'", "sans-serif"],
                 sourceSerif: ["'Source Serif Pro'", "serif"],
             },
             colors: {
