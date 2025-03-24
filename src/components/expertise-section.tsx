@@ -4,7 +4,7 @@ export default function ExpertiseSection() {
   return (
     <section className="py-20 bg-white z-10 relative px-8 text-black">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-16">
+        <h2 className="font-roadRadio text-2xl md:text-7xl lg:text-8xl uppercase mb-16">
           <svg
             width="76"
             height="26"
@@ -24,7 +24,7 @@ export default function ExpertiseSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 -mt-12 md:-mt-36">
           {/* Strategy */}
           <div>
-            <h3 className="font-sequelWide text-3xl uppercase mb-6">
+            <h3 className="font-roadRadio text-3xl uppercase mb-6">
               Strategy
             </h3>
             <p className="text-base mb-6">
@@ -45,7 +45,7 @@ export default function ExpertiseSection() {
 
           {/* Design */}
           <div>
-            <h3 className="font-sequelWide text-3xl uppercase mb-6">Design</h3>
+            <h3 className="font-roadRadio text-3xl uppercase mb-6">Design</h3>
             <p className="text-base mb-6">
               From voice to tone to style, every expression matters. Brand
               design shapes a brand experience by creating identity touchpoints
@@ -64,7 +64,7 @@ export default function ExpertiseSection() {
 
           {/* Digital */}
           <div>
-            <h3 className="font-sequelWide text-3xl uppercase mb-6">Digital</h3>
+            <h3 className="font-roadRadio text-3xl uppercase mb-6">Digital</h3>
             <p className="text-base mb-6">
               Creative functionality with intuitive design makes every
               interaction more meaningful. Embracing digital as an extension of

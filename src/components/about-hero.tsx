@@ -46,7 +46,7 @@ export default function AboutHero() {
               Given that Elizabeth grew up in Nigeria rooting for sports legends
               like{" "}
               <br /> <span className="relative"><span className="text-link font-sequelWide text-sm cursor-pointer">
-                Jay Jay Okochaa
+                Jay Jay Okocha
               </span>
               <Image
                 src="/jayjay.gif"

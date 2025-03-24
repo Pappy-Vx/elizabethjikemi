@@ -4,7 +4,7 @@ export default function AffiliationsSection() {
   return (
     <section className="py-20 bg-white text-black relative z-50 px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-sequelWide text-2xl md:text-7xl lg:text-8xl uppercase mb-16 ">Affiliations</h2>
+        <h2 className="font-roadRadio text-2xl md:text-7xl lg:text-8xl uppercase mb-16 ">Affiliations</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {/* AIGA LA Logo */}
