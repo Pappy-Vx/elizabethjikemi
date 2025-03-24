@@ -1,22 +1,22 @@
 @font-face {
-  font-family: 'Sequel Wide';
-  src: url('/fonts/sequel-100-wide-95.woff2') format('woff2');
+  font-family: "Sequel Wide";
+  src: url("/fonts/sequel-100-wide-95.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tungsten Medium';
-  src: url('/fonts/TungstenMedium.woff') format('woff');
+  font-family: "Tungsten Medium";
+  src: url("/fonts/TungstenMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Source Serif Pro';
-  src: url('/fonts/SourceSerifProRegular.woff2') format('woff2');
+  font-family: "Source Serif Pro";
+  src: url("/fonts/SourceSerifProRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -92,14 +92,13 @@
   }
 }
 
-
 /* Modified Loader: Moves Up to Down, Slower, Dark Grey Color */
- /* Responsive Vertical Loader */
+/* Responsive Vertical Loader */
 .loader {
   display: block;
   --loader-width: 4px; /* Narrower width */
   --loader-color: #333; /* Dark Grey */
-  
+
   width: var(--loader-width);
   height: 100px; /* Default height for larger screens */
   border-radius: 30px;
@@ -134,34 +133,36 @@
 }
 
 /* Responsiveness: Adjust height for different screen sizes */
-@media (max-width: 1024px) { /* Tablets */
+@media (max-width: 1024px) {
+  /* Tablets */
   .loader {
     height: 80px;
   }
 }
 
-@media (max-width: 768px) { /* Smaller Tablets & Large Phones */
+@media (max-width: 768px) {
+  /* Smaller Tablets & Large Phones */
   .loader {
     height: 60px;
   }
 }
 
-@media (max-width: 480px) { /* Mobile Phones */
+@media (max-width: 480px) {
+  /* Mobile Phones */
   .loader {
     height: 40px;
   }
 }
 
-@media (max-width: 320px) { /* Extra Small Phones */
+@media (max-width: 320px) {
+  /* Extra Small Phones */
   .loader {
     height: 30px;
   }
 }
 
-
-
 .back-to-top {
-  cursor: url('/arrow-up.png') 16 16,  auto;
+  cursor: url("/arrow-up.png") 16 16, auto;
 }
 
 .container {
@@ -191,4 +192,33 @@
   fill: "transparent";
   stroke-width: 0.1;
   stroke: #000;
+}
+
+.text-anim {
+  fill: transparent;
+  stroke: #fff;
+}
+
+.text-anim:hover {
+  fill: #fff;
+  stroke: #fff;
+
+  stroke-width: 0.5;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: textAnimation 3s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 50;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+    
+  }
 }
