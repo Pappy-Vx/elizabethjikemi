@@ -30,17 +30,16 @@ export default function AboutHero() {
     >
       <section className="min-h-screen pt-32 px-8 pb-16  flex items-end">
         <h1 className="font-roadRadio text-3xl sm:text-5xl md:text-5xl lg:text-6xl leading-tight uppercase mb-8">
-          Competition and 
+          DATA, AI, STRATEGY…
           <br />
-          creativity runs hard 
+          My Squad
           <br />
-          in his veins.
         </h1>
       </section>
       <section className="mt-8 md:mt-[8rem] px-8 pb-16 flex items-start">
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="w-full ">
-            <p className="text-xl font-sourceSerif  mb-4">
+            <p className="text-lg font-sourceSerif  mb-4">
               Given that Elizabeth grew up in Nigeria rooting for sports legends
               like <br />{" "}
               <span className="relative">
@@ -76,7 +75,7 @@ export default function AboutHero() {
               , that's no surprise.
             </p>
             <br />
-            <p className="text-xl font-sourceSerif mb-4">
+            <p className="text-lg font-sourceSerif mb-4">
               Elizabeth brings that competitive and strategic spirit to her
               passion and work place , making her follow in footstep great
               legends in chess like, <br />{" "}
@@ -97,22 +96,45 @@ export default function AboutHero() {
               list twice.
             </p>
             <br />
-            <p className="text-xl font-sourceSerif mb-4">
-              Elizabeth Jikiemi is a data and AI enthusiast dedicated to
-              equipping nonprofits with technological tools to amplify their
-              impact. With over a decade of experience in tech, finance, and
-              social impact, she specializes in business intelligence, cloud
-              security, and nonprofit fundraising strategies.
+            <p className="text-lg font-sourceSerif mb-4">
+              As a data and AI enthusiast, Elizabeth Jikiemi leverages her
+              expertise to empower nonprofits, amplifying their impact through
+              technological innovation. With over a decade of experience
+              spanning tech, finance, and social impact, her specialties
+              include:
             </p>
             <br />
-            <p className="text-xl font-sourceSerif mb-6">
-            Elizabeth’s journey began with a passion for data-driven decision-making, leading her to work across industries to bridge the gap between technology and philanthropy.
+            <p className="text-lg font-sourceSerif mb-6">
+              - Business intelligence
+              <p>- Cloud Security</p>
+                
+               <p>
+               - Nonprofit fundraising
+               strategies
+               </p>
+               
             </p>
-            <p className="text-xl font-sourceSerif mb-6">
-            Recognized as one of the <span className="font-roadRadio text-sm ">100 Heroines</span>  Changing the Nation (Nigeria at 100 Awards, 2014) and <span className="font-roadRadio text-sm ">Global Humanitarian of the Year</span>  (Women 4 Africa UK, 2015).
+            <p className="text-lg font-sourceSerif mb-6">
+              Elizabeth expertly guides organizations in securing vital funds,
+              fostering stakeholder trust, and deciphering complex financial
+              data. Her doctoral research focuses on fundraising transparency,
+              while her passions extend to cybersecurity, innovative
+              technologies, and volunteer work where tech drives real-world
+              change.
             </p>
-            <p className="text-xl font-sourceSerif mb-6">
-            Author of 'Successfully Telling Stories with Data' and a leader in nonprofit technology transformation.
+            <p className="text-lg font-sourceSerif mb-6">
+              Elizabeth’s journey began with a passion for data-driven
+              decision-making, leading her to work across industries to bridge
+              the gap between technology and philanthropy.
+            </p>
+            <br />
+            <p className="text-lg font-sourceSerif mb-6">
+            Achievements: Recognized as one of the 100 Heroines Changing the Nation (Nigeria at 100 Awards, 2014) and Global Humanitarian of the Year (Women 4 Africa UK, 2015).
+
+            </p>
+            <br />
+            <p className="text-lg font-sourceSerif mb-6">
+            Notable Work: Author of 'Successfully Telling Stories with Data' and a leader in nonprofit technology transformation.
             </p>
             <br />
             <Link
@@ -164,31 +186,31 @@ export default function AboutHero() {
                   Experience
                 </h3>
                 <p className="text-lg font-roadRadio text-white ">
-                Senior Technical Project Manager  
+                  Senior Technical Project Manager
                 </p>
                 <p className="text-lg font-roadRadio text-white mb-4">
-                Exponent Partners, (2024–Present)
+                  Exponent Partners, (2024–Present)
                 </p>
 
                 <p className="text-lg font-roadRadio text-white ">
-                Prospect Development Analyst
+                  Prospect Development Analyst
                 </p>
                 <p className="text-lg font-roadRadio text-white mb-4">
-                Cross Catholic Nonprofit Organization, (2022–2024)
+                  Cross Catholic Nonprofit Organization, (2022–2024)
                 </p>
 
                 <p className="text-lg font-roadRadio text-white ">
-                Business Analyst
+                  Business Analyst
                 </p>
                 <p className="text-lg font-roadRadio text-white mb-4">
-                Pacific Care, (2019–2020)
+                  Pacific Care, (2019–2020)
                 </p>
 
                 <p className="text-lg font-roadRadio text-white ">
-                Project IT & Finance Manager
+                  Project IT & Finance Manager
                 </p>
                 <p className="text-lg font-roadRadio text-white mb-4">
-                ZTE, (2014–2017).
+                  ZTE, (2014–2017).
                 </p>
               </div>
               <h3 className="font-tungsten tracking-[.5rem] text-md uppercase mb-3 ">

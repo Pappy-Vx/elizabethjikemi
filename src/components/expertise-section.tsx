@@ -21,10 +21,10 @@ export default function ExpertiseSection() {
           </svg>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 -mt-12 md:-mt-36">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 -mt-12 md:-mt-36">
           {/* Strategy */}
           <div>
-            <h3 className="font-roadRadio text-3xl uppercase mb-6">
+            <h3 className="font-roadRadio text-xl uppercase mb-6">
               Strategy
             </h3>
             <p className="text-base mb-6">
@@ -45,7 +45,7 @@ export default function ExpertiseSection() {
 
           {/* Design */}
           <div>
-            <h3 className="font-roadRadio text-3xl uppercase mb-6">Design</h3>
+            <h3 className="font-roadRadio text-xl uppercase mb-6">Customer Experience</h3>
             <p className="text-base mb-6">
               From voice to tone to style, every expression matters. Brand
               design shapes a brand experience by creating identity touchpoints
@@ -64,7 +64,24 @@ export default function ExpertiseSection() {
 
           {/* Digital */}
           <div>
-            <h3 className="font-roadRadio text-3xl uppercase mb-6">Digital</h3>
+            <h3 className="font-roadRadio text-xl uppercase mb-6">People Management</h3>
+            <p className="text-base mb-6">
+              Creative functionality with intuitive design makes every
+              interaction more meaningful. Embracing digital as an extension of
+              the physical brand has the power to elevate the experience.
+            </p>
+
+            <ul className="space-y-2 uppercase text-xs">
+              <li>Front End Web Design</li>
+              <li>UI Design</li>
+              <li>UX Strategy</li>
+              <li>App Design</li>
+              <li>CMS Integrations</li>
+              <li>Digital Advertising</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-roadRadio text-xl uppercase mb-6">Fundraising</h3>
             <p className="text-base mb-6">
               Creative functionality with intuitive design makes every
               interaction more meaningful. Embracing digital as an extension of
