@@ -105,14 +105,11 @@ export default function AboutHero() {
             </p>
             <br />
             <p className="text-lg font-sourceSerif mb-6">
-              - Business intelligence
-              <p>- Cloud Security</p>
-                
-               <p>
-               - Nonprofit fundraising
-               strategies
-               </p>
-               
+              - Business intelligence{" "}
+            </p>
+            <p className="text-lg font-sourceSerif mb-6">- Cloud Security</p>
+            <p className="text-lg font-sourceSerif mb-6">
+              - Nonprofit fundraising strategies
             </p>
             <p className="text-lg font-sourceSerif mb-6">
               Elizabeth expertly guides organizations in securing vital funds,
@@ -129,12 +126,14 @@ export default function AboutHero() {
             </p>
             <br />
             <p className="text-lg font-sourceSerif mb-6">
-            Achievements: Recognized as one of the 100 Heroines Changing the Nation (Nigeria at 100 Awards, 2014) and Global Humanitarian of the Year (Women 4 Africa UK, 2015).
-
+              Achievements: Recognized as one of the 100 Heroines Changing the
+              Nation (Nigeria at 100 Awards, 2014) and Global Humanitarian of
+              the Year (Women 4 Africa UK, 2015).
             </p>
             <br />
             <p className="text-lg font-sourceSerif mb-6">
-            Notable Work: Author of 'Successfully Telling Stories with Data' and a leader in nonprofit technology transformation.
+              Notable Work: Author of 'Successfully Telling Stories with Data'
+              and a leader in nonprofit technology transformation.
             </p>
             <br />
             <Link

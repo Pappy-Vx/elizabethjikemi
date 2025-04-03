@@ -202,6 +202,12 @@
   stroke: #000;
 }
 
+.award {
+  fill: "transparent";
+  stroke-width: 0.1;
+  stroke: #fff;
+}
+
 .text-anim {
   fill: transparent;
   stroke: #fff;
