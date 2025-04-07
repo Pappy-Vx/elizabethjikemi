@@ -23,25 +23,21 @@ export default function AffiliationsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {/* AIGA LA Logo */}
           <div className="h-12 w-full flex items-center justify-center opacity-70">
-            <div className="text-center text-sm">AIGA LA</div>
+            <div className="text-center text-sm">Technology Director of Finance   </div>
           </div>
 
           {/* USC Logo */}
           <div className="h-12 w-full flex items-center justify-center opacity-70">
-            <div className="text-center text-sm">USC</div>
+            <div className="text-center text-sm">Extended Reality Development Initiative</div>
           </div>
 
           {/* Other affiliations */}
           <div className="h-12 w-full flex items-center justify-center opacity-70">
-            <div className="text-center text-sm">3% Conference</div>
+            <div className="text-center text-sm">Programs Director</div>
           </div>
 
           <div className="h-12 w-full flex items-center justify-center opacity-70">
-            <div className="text-center text-sm">Designmatters</div>
-          </div>
-
-          <div className="h-12 w-full flex items-center justify-center opacity-70">
-            <div className="text-center text-sm">LACMA</div>
+            <div className="text-center text-sm">The Food Shelter Initiative</div>
           </div>
         </div>
       </div>

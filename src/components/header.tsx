@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 export default function Header() {
-  
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
@@ -30,7 +29,10 @@ export default function Header() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Link href="/" className="hover:opacity-80 transition duration-300 flex flex-row gap-2 items-center">
+        <Link
+          href="/"
+          className="hover:opacity-80 transition duration-300 flex flex-row gap-2 items-center"
+        >
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -61,26 +63,26 @@ export default function Header() {
             </g>
           </svg>
           <div className="overflow-hidden flex space-x-1">
-          {/* "Elizabeth" fades in first */}
-          <motion.span
-            initial={{ x: -20, opacity: 0 }}
-            animate={isHovered ? { x: 0, opacity: 1 } : { x: 20, opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="font-bold"
-          >
-            ELIZABETH
-          </motion.span>
+            {/* "Elizabeth" fades in first */}
+            <motion.span
+              initial={{ x: -20, opacity: 0 }}
+              animate={isHovered ? { x: 0, opacity: 1 } : { x: 20, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="font-bold"
+            >
+              ELIZABETH
+            </motion.span>
 
-          {/* "Jikiemi" fades in slightly later */}
-          <motion.span
-            initial={{ x: -20, opacity: 0 }}
-            animate={isHovered ? { x: 0, opacity: 1 } : { x: 20, opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.15, ease: "easeInOut" }}
-            className="font-bold"
-          >
-            JIKIEMI
-          </motion.span>
-        </div>
+            {/* "Jikiemi" fades in slightly later */}
+            <motion.span
+              initial={{ x: -20, opacity: 0 }}
+              animate={isHovered ? { x: 0, opacity: 1 } : { x: 20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.15, ease: "easeInOut" }}
+              className="font-bold"
+            >
+              JIKIEMI
+            </motion.span>
+          </div>
         </Link>
       </div>
       <nav>

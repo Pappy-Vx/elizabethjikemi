@@ -19,7 +19,7 @@ export default function About() {
       <div className="fixed top-0 left-0 w-full h-full z-0">
         <Image
           src="https://web-assets.same.dev/862165757/3602889100.webp"
-          alt="Anthony Wiktor"
+          alt="Elizabeth Jikiemi"
           fill
           style={{ objectFit: "cover", pointerEvents: "none" }}
           priority
