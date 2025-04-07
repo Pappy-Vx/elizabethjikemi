@@ -80,7 +80,7 @@ export default function Homepage() {
     >
       {/* Hero Section */}
       <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center">
-        <h1 className="font-roadRadio text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight uppercase">
+        <h1 className="font-roadRadio text-2xl sm:text-3xl md:text-4xl lg:text-7xl leading-tight uppercase">
           Turning data into impact and nonprofits
           <br />
           into tech-powered success stories.
