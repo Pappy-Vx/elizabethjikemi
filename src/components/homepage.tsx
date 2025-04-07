@@ -141,8 +141,8 @@ export default function Homepage() {
           ))}
         </div>
       </section>
-      <section className="relative w-full h-screen overflow-hidden mb-72">
-        <h2>
+      <section className="relative w-full h-screen md:h-[120vh] overflow-hidden">
+        <h2 className="ml-20">
           <svg
             width="66"
             height="26"
@@ -161,27 +161,33 @@ export default function Homepage() {
         {/* Background video */}
         <Image
           alt="Background Video"
-          className="absolute left-20 top-60 inset-0 w-[90%] max-w-[80rem] h-full object-cover"
+          className="absolute left-5 md:left-20 top-28 md:top-64 inset-0 w-[90%] max-w-[80rem] h-[65%] object-cover"
           src="/techgif.gif"
           width={720}
-          height={580}
+          height={780}
           style={{ objectFit: "cover", pointerEvents: "none", }}
           priority
         />
 
         {/* Black overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+        <div className="absolute inset-0  z-10" />
 
         {/* Centered content */}
-        <div className="absolute inset-0 z-20 flex items-center justify-center px-6">
-          <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
-            Empowering Non-Profits with <br/>Data and AI
+        <div className="absolute mt-40 ml-10 md:ml-20 inset-0 z-20 flex items-center px-6">
+          <h1 className="font-roadRadio text-4xl md:text-5xl  uppercase leading-tight">
+            Empowering Non-Profits <br/> with Data and AI
           </h1>
         </div>
 
         {/* Bottom-right CTA */}
-        <div className="absolute bottom-6 right-6 z-20">
-          <p className="text-white text-lg font-semibold">Visit Elizabeth</p>
+        <div className="absolute bottom-6 right-16 z-20">
+        <Link
+                href="http://www.fiverr.com/s/P2WxLPw"
+                target="_blank"
+                className="inline-block font-roadRadio tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
+              >
+                Visit Elizabeth Jikiemi
+              </Link>
         </div>
       </section>
     </motion.div>
