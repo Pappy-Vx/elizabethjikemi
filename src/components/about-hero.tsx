@@ -28,7 +28,7 @@ export default function AboutHero() {
     <motion.div
       className={`min-h-screen transition-colors duration-700 ease-in-out ${bgColor} relative z-50`}
     >
-      <section className="min-h-screen pt-32 px-8 pb-16  flex items-end">
+      <section className="min-h-screen pt-32 px-8 pb-16  flex items-center md:items-end">
         <h1 className="font-roadRadio text-3xl sm:text-5xl md:text-5xl lg:text-6xl leading-tight uppercase mb-8">
           DATA, AI, STRATEGY…
           <br />
