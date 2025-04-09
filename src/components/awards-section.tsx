@@ -25,17 +25,17 @@ export default function AwardsSection() {
             />
           </svg>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
           {awards.map((award, index) => (
-            <div key={index} className="border-t border-gray-800 py-3">
-              <div className="grid grid-cols-3 gap-4">
+            <div key={index} className="border-t border-gray-800 py-3 ">
+              <div className="grid grid-cols-3 gap-4 text-center">
                 <div className="col-span-1">
                   <p className="text-sm opacity-80">{award.name}</p>
                 </div>
                 <div className="col-span-1">
                   <p className="text-sm opacity-80">{award.project}</p>
                 </div>
-                <div className="col-span-1 text-right">
+                <div className="col-span-1 ">
                   <p className="text-sm opacity-80">{award.year}</p>
                 </div>
               </div>

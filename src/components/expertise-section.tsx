@@ -25,19 +25,12 @@ export default function ExpertiseSection() {
           <div>
             <h3 className="font-roadRadio text-xl uppercase mb-6">Strategy</h3>
             <p className="text-base mb-6">
-              Strategy is the underlying foundation of every great brand
-              experience. Strategy that is centered on clarifying a brand's
-              message to inform their decisions and shape their actions.
+              Elizabeth blends data intelligence with nonprofit mission
+              alignment to develop practical strategies that drive measurable
+              impact. Her strategic approach ensures that technology
+              implementation, stakeholder engagement, and organizational goals
+              move in sync.
             </p>
-
-            <ul className="space-y-2 uppercase text-xs">
-              <li>Research & Analysis</li>
-              <li>Trend & Insight</li>
-              <li>Customer Experience</li>
-              <li>Brand Platform & Positioning</li>
-              <li>Go-to-market Planning</li>
-              <li>Content & Messaging</li>
-            </ul>
           </div>
 
           {/* Design */}
@@ -46,19 +39,12 @@ export default function ExpertiseSection() {
               Customer Experience
             </h3>
             <p className="text-base mb-6">
-              From voice to tone to style, every expression matters. Brand
-              design shapes a brand experience by creating identity touchpoints
-              from design systems to key messages.
+              With a deep understanding of both technology and human behavior,
+              Elizabeth enhances donor and beneficiary experiences through
+              systems that prioritize transparency, responsiveness, and
+              efficiency. She helps nonprofits design data-informed journeys
+              that increase engagement and retention.
             </p>
-
-            <ul className="space-y-2 uppercase text-xs">
-              <li>Brand Identity</li>
-              <li>Visual Language</li>
-              <li>Packaging Design</li>
-              <li>Brand Campaign</li>
-              <li>Signature Assets</li>
-              <li>Brand Guidelines</li>
-            </ul>
           </div>
 
           {/* Digital */}
@@ -67,38 +53,33 @@ export default function ExpertiseSection() {
               People Management
             </h3>
             <p className="text-base mb-6">
-              Creative functionality with intuitive design makes every
-              interaction more meaningful. Embracing digital as an extension of
-              the physical brand has the power to elevate the experience.
+              Elizabeth leads with empathy and structure. From executive
+              steering councils to volunteer coordination, she fosters
+              collaborative environments where teams thrive. Her people-first
+              leadership style is grounded in clarity, accountability, and
+              continuous development.
             </p>
-
-            <ul className="space-y-2 uppercase text-xs">
-              <li>Front End Web Design</li>
-              <li>UI Design</li>
-              <li>UX Strategy</li>
-              <li>App Design</li>
-              <li>CMS Integrations</li>
-              <li>Digital Advertising</li>
-            </ul>
           </div>
           <div>
             <h3 className="font-roadRadio text-xl uppercase mb-6">
               Fundraising
             </h3>
             <p className="text-base mb-6">
-              Creative functionality with intuitive design makes every
-              interaction more meaningful. Embracing digital as an extension of
-              the physical brand has the power to elevate the experience.
+              Elizabeth is passionate about using data to tell compelling
+              stories that inspire giving. She develops business intelligence
+              tools, analyzes donor trends, and aligns fundraising strategies
+              with organizational goals, helping nonprofits raise more, report
+              better, and build lasting trust.
             </p>
 
-            <ul className="space-y-2 uppercase text-xs">
+            {/* <ul className="space-y-2 uppercase text-xs">
               <li>Front End Web Design</li>
               <li>UI Design</li>
               <li>UX Strategy</li>
               <li>App Design</li>
               <li>CMS Integrations</li>
               <li>Digital Advertising</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
