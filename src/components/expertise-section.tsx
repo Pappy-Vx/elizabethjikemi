@@ -42,8 +42,7 @@ export default function ExpertiseSection() {
               With a deep understanding of both technology and human behavior,
               Elizabeth enhances donor and beneficiary experiences through
               systems that prioritize transparency, responsiveness, and
-              efficiency. She helps nonprofits design data-informed journeys
-              that increase engagement and retention.
+              efficiency. 
             </p>
           </div>
 
