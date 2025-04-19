@@ -115,7 +115,7 @@ export default function Homepage() {
                 }
               >
                 {/* Client Name */}
-                <p className="absolute z-50 top-52 left-24 md:left-36 md:top-40 ">
+                <p className="absolute z-50 flex items-center justify-center">
                   {client.name && (
                     <span dangerouslySetInnerHTML={{ __html: client.name }} />
                   )}
