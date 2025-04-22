@@ -31,7 +31,7 @@ export default function About() {
       <AboutHero />
       {/* <BioSection /> */}
       <ExpertiseSection />
-      <AffiliationsSection />
+      {/* <AffiliationsSection /> */}
       <ClientsSection />
       <AwardsSection />
 </>
