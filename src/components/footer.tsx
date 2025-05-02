@@ -59,13 +59,13 @@ export default function Footer() {
           </div>
 
           <h2 className="font-roadRadio text-2xl md:text-4xl uppercase mb-4">
-          Want to harness the power of data? 
+          Let’s build trust, raise more, and make data work for your cause 
           </h2>
           <Link
             href="mailto:elizabethjikiemi@yahoo.com"
             className="font-roadRadio text-2xl md:text-4xl uppercase underline hover:opacity-80 transition-opacity"
           >
-            Let's connect...
+             Connect now
           </Link>
         </div>
 

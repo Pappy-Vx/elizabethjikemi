@@ -30,9 +30,9 @@ export default function AboutHero() {
     >
       <section className="min-h-screen pt-32 px-8 pb-16  flex items-center md:items-end">
         <h1 className="font-roadRadio text-3xl sm:text-5xl md:text-5xl lg:text-6xl leading-tight uppercase mb-8">
-          DATA, AI, STRATEGY
+          DATA, AI, STRATEGY...
           <br />
-          My Squad...
+          My Squad
           <br />
         </h1>
       </section>
@@ -40,8 +40,7 @@ export default function AboutHero() {
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="w-full ">
             <p className="text-lg font-sourceSerif  mb-4">
-              Given that Elizabeth grew up in Nigeria rooting for sports legends
-              like <br />{" "}
+            Growing up in Nigeria, inspired by sports legends like <br />{" "}
               <span className="relative">
                 <span className="text-link font-roadRadio text-sm cursor-pointer">
                   Jay Jay Okocha
@@ -60,7 +59,7 @@ export default function AboutHero() {
               <span className="relative">
                 {" "}
                 <span className="text-link font-roadRadio text-sm cursor-pointer">
-                  Thierry Henry
+                  Thierry Henry,
                 </span>{" "}
                 <Image
                   src="/henry.gif"
@@ -72,16 +71,9 @@ export default function AboutHero() {
                   priority
                 />{" "}
               </span>{" "}
-              , that's no surprise.
-            </p>
-            <br />
-            <p className="text-lg font-sourceSerif mb-4">
-              Elizabeth brings that competitive and strategic spirit to her
-              passion and work place , making her follow in footstep great
-              legends in chess like, <br />{" "}
-              <span className="relative">
+              Elizabeth Jikiemi developed a competitive and strategic spirit that she applies to her work, similar to her chess icons,              <span className="relative">
                 <span className="text-link font-roadRadio text-sm cursor-pointer">
-                  Polgar Sisters
+                  Polgar Sisters.
                 </span>{" "}
                 <Image
                   src="/polgar.jpg"
@@ -93,47 +85,19 @@ export default function AboutHero() {
                   priority
                 />{" "}
               </span>
-              list twice.
             </p>
             <br />
             <p className="text-lg font-sourceSerif mb-4">
-              As a data and AI enthusiast, Elizabeth Jikiemi leverages her
-              expertise to empower nonprofits, amplifying their impact through
-              technological innovation. With over a decade of experience
-              spanning tech, finance, and social impact, her specialties
-              include:
+            As a data and AI enthusiast, Elizabeth empowers nonprofits to amplify their impact through technology. With over a decade of experience across tech, finance, and social impact, she specializes in business intelligence, cloud security, and nonprofit fundraising strategies.
             </p>
             <br />
-            <p className="text-lg font-sourceSerif mb-6">
-              - Business intelligence{" "}
-            </p>
-            <p className="text-lg font-sourceSerif mb-6">- Cloud Security</p>
-            <p className="text-lg font-sourceSerif mb-6">
-              - Nonprofit fundraising strategies
-            </p>
-            <p className="text-lg font-sourceSerif mb-6">
-              Elizabeth expertly guides organizations in securing vital funds,
-              fostering stakeholder trust, and deciphering complex financial
-              data. Her doctoral research focuses on fundraising transparency,
-              while her passions extend to cybersecurity, innovative
-              technologies, and volunteer work where tech drives real-world
-              change.
-            </p>
-            <p className="text-lg font-sourceSerif mb-6">
-              Elizabeth’s journey began with a passion for data-driven
-              decision-making, leading her to work across industries to bridge
-              the gap between technology and philanthropy.
+            <p className="text-lg font-sourceSerif mb-4">
+            She guides organizations in securing funds, building stakeholder trust, and interpreting complex data. Her doctoral research focuses on fundraising transparency. She is passionate about using technology to drive social change through cybersecurity, innovation, and volunteer work.
             </p>
             <br />
+            
             <p className="text-lg font-sourceSerif mb-6">
-              Achievements: Recognized as one of the 100 Heroines Changing the
-              Nation (Nigeria at 100 Awards, 2014) and Global Humanitarian of
-              the Year (Women 4 Africa UK, 2015).
-            </p>
-            <br />
-            <p className="text-lg font-sourceSerif mb-6">
-              Notable Work: Author of 'Successfully Telling Stories with Data'
-              and a leader in nonprofit technology transformation.
+            Her achievements include being named one of the 100 Heroines Changing the Nation (Nigeria at 100 Awards, 2014) and Global Humanitarian of the Year (Women 4 Africa UK, 2015). She is the author of Successfully Telling Stories with Data and a leader in nonprofit technology transformation.
             </p>
             <br />
             <Link

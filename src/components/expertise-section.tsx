@@ -23,52 +23,37 @@ export default function ExpertiseSection() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 -mt-12 md:-mt-36">
           {/* Strategy */}
           <div>
-            <h3 className="font-roadRadio text-xl uppercase mb-6">Strategy</h3>
+            <h3 className="font-roadRadio text-lg uppercase mb-6">Strategy</h3>
             <p className="text-base mb-6">
-              Elizabeth blends data intelligence with nonprofit mission
-              alignment to develop practical strategies that drive measurable
-              impact. Her strategic approach ensures that technology
-              implementation, stakeholder engagement, and organizational goals
-              move in sync.
+            Elizabeth aligns data intelligence and nonprofit goals, crafting strategies where technology, engagement, and operations merge to drive measurable impact and advance sustainable organizational outcomes efficiently.
             </p>
           </div>
 
           {/* Design */}
           <div>
-            <h3 className="font-roadRadio text-xl uppercase mb-6">
-              Customer Experience
+            <h3 className="font-roadRadio text-md uppercase mb-6">
+              Stakeholder Management
             </h3>
             <p className="text-base mb-6">
-              With a deep understanding of both technology and human behavior,
-              Elizabeth enhances donor and beneficiary experiences through
-              systems that prioritize transparency, responsiveness, and
-              efficiency. 
+            Elizabeth builds trust across donors, volunteers, and leaders. Through transparent systems, empathetic leadership, and responsive engagement, she deepens relationships, promotes accountability, and empowers collaborative nonprofit success. 
             </p>
           </div>
 
           {/* Digital */}
           <div>
-            <h3 className="font-roadRadio text-xl uppercase mb-6">
-              People Management
+            <h3 className="font-roadRadio text-lg uppercase mb-6">
+              Change Management
             </h3>
             <p className="text-base mb-6">
-              Elizabeth leads with empathy and structure. From executive
-              steering councils to volunteer coordination, she fosters
-              collaborative environments where teams thrive. Her people-first
-              leadership style is grounded in clarity, accountability, and
-              continuous development.
+            Elizabeth leads smooth transitions by leveraging data and technology. Her strategies ensure innovation adoption, minimize disruption, improve efficiency, and empower nonprofits to embrace sustainable change confidently.
             </p>
           </div>
           <div>
-            <h3 className="font-roadRadio text-xl uppercase mb-6">
+            <h3 className="font-roadRadio text-lg uppercase mb-6">
               Fundraising
             </h3>
             <p className="text-base mb-6">
-              Elizabeth is passionate about using data to tell compelling
-              stories that inspire giving. She develops business intelligence
-              tools, analyzes donor trends, and aligns fundraising strategies
-              with organizational goals, helping nonprofits raise more, report
-              better, and build lasting trust.
+            Elizabeth uses data-driven insights to inspire giving. She develops tools, analyzes donor trends, and crafts strategies that help nonprofits secure funds, report transparently, and sustain relationships.
             </p>
 
             {/* <ul className="space-y-2 uppercase text-xs">
