@@ -102,51 +102,53 @@ export default function Homepage() {
       </section>
 
       {/* Clients Section */}
-      <section
-        className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
-        id="clientsgrid"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {clients.map((client, index) => (
-            <Link key={index} href={client.url} target="_blank">
-              <motion.div
-                className="relative group h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
-                onMouseEnter={() => setBgColor(client.bgColor)}
-                onMouseLeave={() =>
-                  setBgColor(
-                    window.scrollY > window.innerHeight * 0.1
-                      ? "#000000"
-                      : "#FFFFFF"
-                  )
-                }
-              >
-                {/* Client Name */}
-                <p className="absolute z-50 flex items-center justify-center">
-                  {client.name && (
-                    <span dangerouslySetInnerHTML={{ __html: client.name }} />
-                  )}
-                </p>
+     <section
+  className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
+  id="clientsgrid"
+>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {clients.map((client, index) => (
+      <Link key={index} href={client.url} target="_blank">
+        <motion.div
+          className="relative group h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
+          onMouseEnter={() => setBgColor(client.bgColor)}
+          onMouseLeave={() =>
+            setBgColor(
+              window.scrollY > window.innerHeight * 0.1
+                ? "#000000"
+                : "#FFFFFF"
+            )
+          }
+        >
+          {/* Client Name */}
+          <p className="absolute z-50 flex items-center justify-center">
+            {client.name && (
+              <span dangerouslySetInnerHTML={{ __html: client.name }} />
+            )}
+          </p>
 
-                {/* Image (Zooms in on hover) */}
-                <motion.div
-                  className="absolute w-full h-full"
-                  initial={{ scale: 1, opacity: 0 }}
-                  whileHover={{ scale: 1.2, opacity: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                  <Image
-                    src={client.logo}
-                    alt={client.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  />
-                </motion.div>
-              </motion.div>
-            </Link>
-          ))}
-        </div>
-      </section>
+          {/* Image (Always visible on mobile/tablet, hover-reveal on desktop) */}
+          <motion.div
+            className="absolute w-full h-full"
+            initial={{ scale: 1, opacity: 0 }}
+            whileHover={{ scale: 1.2, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <Image
+              src={client.logo}
+              alt={client.name}
+              layout="fill"
+              objectFit="cover"
+              className="transition-opacity duration-500 
+                         opacity-100 md:opacity-0 
+                         md:group-hover:opacity-100"
+            />
+          </motion.div>
+        </motion.div>
+      </Link>
+    ))}
+  </div>
+</section>
       <section className="relative w-full h-screen md:h-[120vh] overflow-hidden">
         <h2 className="ml-20">
           <svg
