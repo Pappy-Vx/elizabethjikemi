@@ -10,7 +10,7 @@ const parser = new Parser()
 
 const clients = [
   {
-    
+
     name: "<svg width='160' height='40' viewBox='0 0 41 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0.78 9C0.78 7.656 0.78 6.296 0.78 4.92C0.78 3.544 0.78 2.184 0.78 0.84C1.588 0.84 2.404 0.84 3.228 0.84C4.052 0.84 4.868 0.84 5.676 0.84C5.676 1.152 5.676 1.468 5.676 1.788C5.676 2.108 5.676 2.424 5.676 2.736C5.212 2.736 4.744 2.736 4.272 2.736C3.808 2.736 3.344 2.736 2.88 2.736C2.88 2.968 2.88 3.208 2.88 3.456C2.88 3.696 2.88 3.932 2.88 4.164C3.304 4.164 3.732 4.164 4.164 4.164C4.596 4.164 5.02 4.164 5.436 4.164C5.436 4.46 5.436 4.76 5.436 5.064C5.436 5.368 5.436 5.672 5.436 5.976C5.02 5.976 4.596 5.976 4.164 5.976C3.732 5.976 3.304 5.976 2.88 5.976C2.88 6.472 2.88 6.976 2.88 7.488C2.88 8 2.88 8.504 2.88 9C2.536 9 2.188 9 1.836 9C1.484 9 1.132 9 0.78 9ZM5.84766 9C6.26366 7.656 6.67966 6.296 7.09566 4.92C7.51966 3.544 7.93966 2.184 8.35566 0.84C8.82766 0.84 9.30366 0.84 9.78366 0.84C10.2717 0.84 10.7517 0.84 11.2237 0.84C11.6397 2.184 12.0557 3.544 12.4717 4.92C12.8957 6.296 13.3157 7.656 13.7317 9C13.3877 9 13.0357 9 12.6757 9C12.3237 9 11.9717 9 11.6197 9C11.5397 8.744 11.4637 8.488 11.3917 8.232C11.3197 7.968 11.2437 7.708 11.1637 7.452C10.7077 7.452 10.2477 7.452 9.78366 7.452C9.32766 7.452 8.87166 7.452 8.41566 7.452C8.33566 7.708 8.25966 7.968 8.18766 8.232C8.11566 8.488 8.03966 8.744 7.95966 9C7.61566 9 7.26366 9 6.90366 9C6.55166 9 6.19966 9 5.84766 9ZM8.94366 5.664C9.22366 5.664 9.50366 5.664 9.78366 5.664C10.0717 5.664 10.3557 5.664 10.6357 5.664C10.4997 5.192 10.3597 4.716 10.2157 4.236C10.0717 3.756 9.93166 3.28 9.79566 2.808C9.65966 3.28 9.51566 3.756 9.36366 4.236C9.21966 4.716 9.07966 5.192 8.94366 5.664ZM14.5144 9C14.5144 7.656 14.5144 6.296 14.5144 4.92C14.5144 3.544 14.5144 2.184 14.5144 0.84C15.0104 0.84 15.5104 0.84 16.0144 0.84C16.5184 0.84 17.0184 0.84 17.5144 0.84C17.7464 1.656 17.9744 2.484 18.1984 3.324C18.4304 4.156 18.6584 4.98 18.8824 5.796C19.1064 4.98 19.3304 4.156 19.5544 3.324C19.7864 2.484 20.0144 1.656 20.2384 0.84C20.7344 0.84 21.2304 0.84 21.7264 0.84C22.2224 0.84 22.7144 0.84 23.2024 0.84C23.2104 2.184 23.2184 3.544 23.2264 4.92C23.2344 6.296 23.2424 7.656 23.2504 9C22.9144 9 22.5744 9 22.2304 9C21.8944 9 21.5584 9 21.2224 9C21.2224 8.088 21.2224 7.168 21.2224 6.24C21.2224 5.304 21.2224 4.38 21.2224 3.468C20.9824 4.38 20.7384 5.304 20.4904 6.24C20.2424 7.168 19.9984 8.088 19.7584 9C19.4624 9 19.1584 9 18.8464 9C18.5424 9 18.2384 9 17.9344 9C17.6944 8.104 17.4544 7.2 17.2144 6.288C16.9744 5.368 16.7344 4.46 16.4944 3.564C16.4944 4.46 16.4944 5.368 16.4944 6.288C16.4944 7.2 16.4944 8.104 16.4944 9C16.1744 9 15.8464 9 15.5104 9C15.1744 9 14.8424 9 14.5144 9ZM24.8752 9C24.8752 7.656 24.8752 6.296 24.8752 4.92C24.8752 3.544 24.8752 2.184 24.8752 0.84C25.2272 0.84 25.5792 0.84 25.9312 0.84C26.2832 0.84 26.6312 0.84 26.9752 0.84C26.9752 2.184 26.9752 3.544 26.9752 4.92C26.9752 6.296 26.9752 7.656 26.9752 9C26.6312 9 26.2832 9 25.9312 9C25.5792 9 25.2272 9 24.8752 9ZM28.6003 9C28.6003 7.656 28.6003 6.296 28.6003 4.92C28.6003 3.544 28.6003 2.184 28.6003 0.84C28.9523 0.84 29.3043 0.84 29.6563 0.84C30.0083 0.84 30.3563 0.84 30.7003 0.84C30.7003 1.872 30.7003 2.916 30.7003 3.972C30.7003 5.02 30.7003 6.06 30.7003 7.092C31.1243 7.092 31.5523 7.092 31.9843 7.092C32.4163 7.092 32.8403 7.092 33.2563 7.092C33.2563 7.404 33.2563 7.724 33.2563 8.052C33.2563 8.372 33.2563 8.688 33.2563 9C32.4883 9 31.7123 9 30.9283 9C30.1443 9 29.3683 9 28.6003 9ZM35.6846 9C35.6846 8.512 35.6846 8.02 35.6846 7.524C35.6846 7.028 35.6846 6.536 35.6846 6.048C35.2606 5.192 34.8286 4.324 34.3886 3.444C33.9486 2.564 33.5166 1.696 33.0926 0.84C33.4606 0.84 33.8326 0.84 34.2086 0.84C34.5846 0.84 34.9566 0.84 35.3246 0.84C35.5566 1.328 35.7926 1.82 36.0326 2.316C36.2806 2.804 36.5206 3.292 36.7526 3.78C36.9846 3.292 37.2206 2.804 37.4606 2.316C37.7006 1.82 37.9366 1.328 38.1686 0.84C38.5366 0.84 38.9046 0.84 39.2726 0.84C39.6406 0.84 40.0086 0.84 40.3766 0.84C39.9526 1.696 39.5206 2.564 39.0806 3.444C38.6406 4.324 38.2086 5.192 37.7846 6.048C37.7846 6.536 37.7846 7.028 37.7846 7.524C37.7846 8.02 37.7846 8.512 37.7846 9C37.4406 9 37.0926 9 36.7406 9C36.3886 9 36.0366 9 35.6846 9Z' fill=''/></svg>",
     logo: "/family.jpg",
     url: "/family",
@@ -51,7 +51,7 @@ const clients = [
 export default function Homepage() {
   const [bgColor, setBgColor] = useState("#FFFFFF"); // Default: White Background
 
-
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,6 +67,14 @@ export default function Homepage() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+
+    const checkMobile = () => setIsMobile(window.innerWidth < 768); // lg breakpoint
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+
+    console.log(checkMobile(), "mobile")
   }, []);
 
   const scrollToClientsGrid = () => {
@@ -75,7 +83,11 @@ export default function Homepage() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+  // Variants for animation
+  const hoverVariants: Variants = {
+    initial: { scale: 1, opacity: isMobile ? 1 : 0 },
+    hover: { scale: 1.2, opacity: 1 },
+  };
   return (
     <motion.div
       className="min-h-screen transition-colors duration-700 ease-in-out"
@@ -102,53 +114,54 @@ export default function Homepage() {
       </section>
 
       {/* Clients Section */}
-     <section
-  className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
-  id="clientsgrid"
->
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    {clients.map((client, index) => (
-      <Link key={index} href={client.url} target="_blank">
-        <motion.div
-          className="relative group h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
-          onMouseEnter={() => setBgColor(client.bgColor)}
-          onMouseLeave={() =>
-            setBgColor(
-              window.scrollY > window.innerHeight * 0.1
-                ? "#000000"
-                : "#FFFFFF"
-            )
-          }
-        >
-          {/* Client Name */}
-          <p className="absolute z-50 flex items-center justify-center">
-            {client.name && (
-              <span dangerouslySetInnerHTML={{ __html: client.name }} />
-            )}
-          </p>
+      <section
+        className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
+        id="clientsgrid"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {clients.map((client, index) => (
+            <Link key={index} href={client.url} target="_blank">
+              <motion.div
+                className="relative group h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
+                onMouseEnter={() => setBgColor(client.bgColor)}
+                onMouseLeave={() =>
+                  setBgColor(
+                    window.scrollY > window.innerHeight * 0.1
+                      ? "#000000"
+                      : "#FFFFFF"
+                  )
+                }
+              >
+                {/* Client Name */}
+                <p className="absolute z-50 flex items-center justify-center">
+                  {client.name && (
+                    <span dangerouslySetInnerHTML={{ __html: client.name }} />
+                  )}
+                </p>
 
-          {/* Image (Always visible on mobile/tablet, hover-reveal on desktop) */}
-          <motion.div
-            className="absolute w-full h-full"
-            initial={{ scale: 1, opacity: 0 }}
-            whileHover={{ scale: 1.2, opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            <Image
-              src={client.logo}
-              alt={client.name}
-              layout="fill"
-              objectFit="cover"
-              className="transition-opacity duration-500 
-                         opacity-100 md:opacity-0 
-                         md:group-hover:opacity-100"
-            />
-          </motion.div>
-        </motion.div>
-      </Link>
-    ))}
-  </div>
-</section>
+                {/* Image */}
+                <motion.div
+                  className="absolute w-full h-full"
+                  variants={hoverVariants}
+                  initial="initial"
+                  whileHover={!isMobile ? "hover" : undefined}
+                  animate={isMobile ? "hover" : "initial"}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    layout="fill"
+                    objectFit="cover"
+                    className={`transition-opacity duration-500 ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                      }`}
+                  />
+                </motion.div>
+              </motion.div>
+            </Link>
+          ))}
+        </div>
+      </section>
       <section className="relative w-full h-screen md:h-[120vh] overflow-hidden">
         <h2 className="ml-20">
           <svg
@@ -183,22 +196,22 @@ export default function Homepage() {
         {/* Centered content */}
         <div className="absolute mt-40 ml-10 md:ml-20 inset-0 z-20 flex items-center px-6">
           <h1 className="font-roadRadio text-4xl md:text-5xl  uppercase leading-tight">
-            Empowering Non-Profits <br/> with Data and AI
+            Empowering Non-Profits <br /> with Data and AI
           </h1>
         </div>
 
         {/* Bottom-right CTA */}
         <div className="absolute bottom-6 right-16 z-20">
-        <Link
-                href="http://www.fiverr.com/s/P2WxLPw"
-                target="_blank"
-                className="inline-block font-roadRadio tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
-              >
-                Visit Elizabeth Jikiemi
-              </Link>
+          <Link
+            href="http://www.fiverr.com/s/P2WxLPw"
+            target="_blank"
+            className="inline-block font-roadRadio tracking-wider text-sm uppercase hover:opacity-80 transition-opacity"
+          >
+            Visit Elizabeth Jikiemi
+          </Link>
         </div>
       </section>
-      
+
     </motion.div>
   );
 }
