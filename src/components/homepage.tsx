@@ -113,16 +113,15 @@ export default function Homepage() {
         </div>
       </section>
 
-      {/* Clients Section */}
+      {/* Clients Section - Desktop*/}
       <section
-        className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
-        id="clientsgrid"
+        className="w-full min-h-0 md:min-h-screen  py-10 px-[2rem] transition-all duration-700 invisible md:visible"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {clients.map((client, index) => (
-            <Link key={index} href={client.url} target="_blank">
+            <Link key={index} href={client.url} target="_blank" >
               <motion.div
-                className="relative group h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
+                className="relative group h-0 md:h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
                 onMouseEnter={() => setBgColor(client.bgColor)}
                 onMouseLeave={() =>
                   setBgColor(
@@ -162,6 +161,51 @@ export default function Homepage() {
           ))}
         </div>
       </section>
+
+      {/* Clients Section - Mobile*/}
+      <section
+        className="w-full min-h-screen md:min-h-0  py-10 md:py-0 px-[2rem] md:px-0 transition-all duration-700 visible md:invisible"
+      >
+        <div className="grid grid-cols-1 gap-8 ">
+          {clients.map((client, index) => (
+            <Link key={index} href={client.url} target="_blank" >
+              <motion.div
+                className="relative group h-[60vh] md:h-0 flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
+                onMouseEnter={() => setBgColor(client.bgColor)}
+                onMouseLeave={() =>
+                  setBgColor(
+                    window.scrollY > window.innerHeight * 0.1
+                      ? "#000000"
+                      : "#FFFFFF"
+                  )
+                }
+              >
+                {/* Client Name */}
+                <p className="absolute z-50 flex items-center justify-center">
+                  {client.name && (
+                    <span dangerouslySetInnerHTML={{ __html: client.name }} />
+                  )}
+                </p>
+
+                {/* Image */}
+                <motion.div
+                  className="absolute w-full h-full"
+                >
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    layout="fill"
+                    objectFit="cover"
+                    
+                  />
+                </motion.div>
+              </motion.div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+
       <section className="relative w-full h-screen md:h-[120vh] overflow-hidden">
         <h2 className="ml-20">
           <svg
