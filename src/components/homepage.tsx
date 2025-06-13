@@ -51,8 +51,6 @@ const clients = [
 export default function Homepage() {
   const [bgColor, setBgColor] = useState("#FFFFFF"); // Default: White Background
 
-  const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -67,14 +65,6 @@ export default function Homepage() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-
-    const checkMobile = () => setIsMobile(window.innerWidth < 768); // lg breakpoint
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-
-    return () => window.removeEventListener("resize", checkMobile);
-
-    console.log(checkMobile(), "mobile")
   }, []);
 
   const scrollToClientsGrid = () => {
@@ -84,10 +74,7 @@ export default function Homepage() {
     }
   };
   // Variants for animation
-  const hoverVariants: Variants = {
-    initial: { scale: 1, opacity: isMobile ? 1 : 0 },
-    hover: { scale: 1.2, opacity: 1 },
-  };
+
   return (
     <motion.div
       className="min-h-screen transition-colors duration-700 ease-in-out"
@@ -138,13 +125,12 @@ export default function Homepage() {
                   )}
                 </p>
 
-                {/* Image */}
+
+                    {/* Image (Zooms in on hover) */}
                 <motion.div
                   className="absolute w-full h-full"
-                  variants={hoverVariants}
-                  initial="initial"
-                  whileHover={!isMobile ? "hover" : undefined}
-                  animate={isMobile ? "hover" : "initial"}
+                  initial={{ scale: 1, opacity: 0 }}
+                  whileHover={{ scale: 1.2, opacity: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   <Image
@@ -152,8 +138,7 @@ export default function Homepage() {
                     alt={client.name}
                     layout="fill"
                     objectFit="cover"
-                    className={`transition-opacity duration-500 ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                      }`}
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   />
                 </motion.div>
               </motion.div>
@@ -196,7 +181,6 @@ export default function Homepage() {
                     alt={client.name}
                     layout="fill"
                     objectFit="cover"
-                    
                   />
                 </motion.div>
               </motion.div>
