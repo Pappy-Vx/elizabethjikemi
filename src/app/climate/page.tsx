@@ -13,7 +13,7 @@ import FutureClimate from "./future-climate";
 
 export const metadata = {
      title: 'Climate • Elizabeth Jikiemi Award-Winning Project Manager and NGO Specialist',
-     description: 'Elizabeth Jikiemi is a Super Award-Winning Project Manager and NGO Specialist based in Indiana specializing in branding, design, interactive, and advertising to help challenger brands break through the clutter and outsmart the competition.',
+     description: 'Systems matter. So does the air we breathe. This is where stewardship meets strategy.',
    }
 
 export default function Climate() {
