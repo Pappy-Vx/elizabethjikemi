@@ -3,12 +3,15 @@
 export default function FutureClimate() {
     return (
         <section className="py-20 bg-[#000000CC] relative z-10 px-8 text-white">
-            <section className="mt-8 md:mt-[8rem] px-8 pb-16 flex items-start">
+            <section className="mt-8 md:mt-[8rem] pb-16 flex items-start">
                 <div className="w-full mx-auto">
                     <div className="w-full ">
-                        <h3 className="text-lg md:text-2xl font-sourceSerif font-bold mb-4">
-                            5. Climate for the Future: What We Are Building
-                        </h3>
+                        <span className="flex flex-col md:flex-row items-center">
+                            <span><img src="/futureclimate.png" alt="family-stakeholder" className="w-20" /></span>
+                            <h3 className="text-lg md:text-2xl font-sourceSerif font-bold mb-4 text-center">
+                                Climate for the Future: What We Are Building
+                            </h3>
+                        </span>
                         <br />
                         <p className="text-md md:text-lg font-sourceSerif mb-4">
                             I want to help create a future where sustainability is no longer treated as a luxury, but embraced as the standard. A world where nonprofits do not have to choose between performance and purpose. A world where policy is driven not just by numbers, but by compassion and common sense.

@@ -3,12 +3,15 @@
 export default function DataClimate() {
   return (
     <section className="py-20 bg-[#000000CC] relative z-10 px-8 text-white">
-      <section className="mt-8 md:mt-[8rem] px-8 pb-16 flex items-start">
+      <section className="mt-8 md:mt-[8rem] pb-16 flex items-start">
         <div className="w-full mx-auto">
-          <div className="w-full ">
-              <h3 className="text-lg md:text-2xl font-sourceSerif font-bold mb-4">
-                3. Data for Impact: Climate in the Numbers
+          <div className="w-full">
+            <span className="flex flex-col md:flex-row items-center">
+              <span><img src="/dataclimate.png" alt="family-stakeholder" className="w-20" /></span>
+              <h3 className="text-lg md:text-2xl font-sourceSerif font-bold mb-4 text-center">
+                Data for Impact: Climate in the Numbers
               </h3>
+            </span>
             <br />
             <p className="text-md md:text-lg font-sourceSerif mb-4">
               Numbers can tell powerful stories when we listen closely. I have seen data turn vague concerns about a community garden into a case for city-wide food reform. I have watched a dashboard turn climate urgency into clear advocacy that drives action.
@@ -23,7 +26,7 @@ export default function DataClimate() {
             </p>
             <br />
             <p className="text-md md:text-lg font-sourceSerif mb-6">
-             We must collect with informed consent, report with dignity, and design systems in collaboration with the people the data represents. This is how data becomes not just a tool, but a bridge.
+              We must collect with informed consent, report with dignity, and design systems in collaboration with the people the data represents. This is how data becomes not just a tool, but a bridge.
             </p>
           </div>
         </div>

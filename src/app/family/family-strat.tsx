@@ -3,7 +3,7 @@
 export default function FamilyStrategy() {
   return (
     <section className="py-20 bg-white z-10 relative px-8 text-black">
-    <section className="mt-8 md:mt-[8rem] px-8 pb-16 flex items-start">
+    <section className="mt-8 md:mt-[8rem]  pb-16 flex items-start">
         <div className="w-full mx-auto">
           <div className="w-full ">
             <span className="flex flex-col md:flex-row items-center">
