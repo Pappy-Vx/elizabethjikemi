@@ -6,6 +6,8 @@ import Header from "@/components/header";
 import AboutHero from "@/components/about-hero";
 import Image from "next/image";
 import NigeriaCore from "./nigeria-core";
+import NigerianWay from "./nigerian-way";
+import DiasporaVision from "./diasopra-vision";
 
 export const metadata = {
      title: 'Nigeria • Elizabeth Jikiemi Award-Winning Project Manager and NGO Specialist',
@@ -29,11 +31,8 @@ export default function Nigeria() {
       {/* Foreground Content */}
       <Header />
       <NigeriaCore />
-      {/* <BioSection /> */}
-      <ExpertiseSection />
-      {/*   */}
-      <ClientsSection />
-      <AwardsSection />
+      <NigerianWay />
+      <DiasporaVision />
 </>
 
 

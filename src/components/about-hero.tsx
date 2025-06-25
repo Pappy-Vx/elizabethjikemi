@@ -148,6 +148,12 @@ export default function AboutHero() {
                 <h3 className="font-tungsten text-lg tracking-[.7rem] mb-2 uppercase">
                   Experience
                 </h3>
+                 <p className="text-lg font-roadRadio text-white ">
+                  Founder
+                </p>
+                <p className="text-lg font-roadRadio text-white mb-4">
+                  The Food Shelter Initiative, (2012 - Present)
+                </p>
                 <p className="text-lg font-roadRadio text-white ">
                   Senior Technical Project Manager
                 </p>
