@@ -20,7 +20,7 @@ export default function Climate() {
   return (
 <>
       {/* Fixed Background Image */}
-      <div className="fixed top-0 left-0 w-full h-full z-0">
+      {/* <div className="fixed top-0 left-0 w-full h-full z-0">
         <Image
           src="/climatebg.jpg"
           alt="climate"
@@ -28,7 +28,9 @@ export default function Climate() {
           style={{ objectFit: "cover", pointerEvents: "none" }}
           priority
         />
-      </div> 
+      </div>  */}
+       <div className="bg-white fixed top-0 left-0 w-full h-full z-0">
+      </div>
 
       {/* Foreground Content */}
       <Header />
