@@ -21,7 +21,7 @@ export default function ClientsSection() {
         </h2>
 
 
-        <span>Successfully Telling Stories with Data – <Link href="https://www.amazon.com/Successfully-Telling-Stories-Data-Interpret-ebook/dp/B0CZ96TCFC">Amazon Link.</Link></span>
+        <span>Successfully Telling Stories with Data – <Link href="https://www.amazon.com/Successfully-Telling-Stories-Data-Interpret-ebook/dp/B0CZ96TCFC" className="underline text-green-500">Amazon Link.</Link></span>
 
         
       </div>

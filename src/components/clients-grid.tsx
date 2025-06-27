@@ -49,7 +49,7 @@ export default function ClientsGrid() {
 
   return (
     <motion.section
-      className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700"
+      className="w-full min-h-screen py-10 px-[2rem] transition-all duration-700 max-w-6xl mx-auto"
       style={{ backgroundColor: bgColor }}
       id="clientsgrid"
     >

@@ -3,7 +3,7 @@
 export default function FamilyStake() {
     return (
         <section className="py-20 bg-[#000000CC] relative z-10 px-8 text-white">
-            <section className="mt-8 md:mt-[8rem]  pb-16 flex items-start">
+            <section className="mt-8 md:mt-[8rem]  pb-16 flex items-start max-w-6xl mx-auto">
                 <div className="w-full mx-auto">
                     <div className="w-full h-64 mb-8">
                         <img
@@ -29,7 +29,7 @@ export default function FamilyStake() {
                         </p>
                         <br />
 
-                        <p className="text-md md:text-xl font-sourceSerif mb-6">
+                        <p className="text-md md:text-xl font-roadRadio mb-6">
                             The moments that keep me grounded are often the quiet ones. Holding hands during a walk. Letting a playlist hum in the background while we sit in silence. These simple things matter more than they appear. They are the spaces where love becomes visible.
                         </p>
                         <br />

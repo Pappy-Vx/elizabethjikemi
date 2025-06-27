@@ -3,7 +3,7 @@
 export default function Change() {
   return (
     <section className="py-20 bg-white z-10 relative px-8 text-black">
-      <section className="mt-8 md:mt-32 pb-16 px-4 md:px-8">
+      <section className="mt-8 md:mt-32 pb-16 px-4 md:px-8 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Image */}
           <div className="w-full h-full">
@@ -36,7 +36,7 @@ export default function Change() {
                 At home, we treat transitions like we treat project launches. We talk more. We listen more. We check in more often. Even our dog, Jack, gets extra walks when the emotional weather changes. This is how we grow together, with honesty, presence, and care.
               </p>
               <br />
-              <p className="text-md md:text-xl font-sourceSerif mb-6 italic">
+              <p className="text-md md:text-xl font-roadRadio text-uppercase mb-6 ">
                 Maya Angelou once said, “I can be changed by what happens to me, but I refuse to be reduced by it.” That line has become a quiet compass. It shapes the way I lead and the way I love.
               </p>
             </div>

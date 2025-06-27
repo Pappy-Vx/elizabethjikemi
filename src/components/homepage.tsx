@@ -77,14 +77,14 @@ export default function Homepage() {
 
   return (
     <motion.div
-      className="min-h-screen transition-colors duration-700 ease-in-out"
+      className="min-h-screen transition-colors duration-700 ease-in-out "
       style={{
         backgroundColor: bgColor,
         color: bgColor === "#000000" ? "white" : "black",
       }} // Adjust text color based on background
     >
       {/* Hero Section */}
-      <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center">
+      <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center max-w-6xl mx-auto">
         <h1 className="font-roadRadio text-2xl sm:text-3xl md:text-4xl lg:text-7xl leading-tight uppercase">
           Turning data into impact and nonprofits
           <br />
@@ -102,10 +102,10 @@ export default function Homepage() {
 
       {/* Clients Section - Desktop*/}
       <section
-        className="w-full min-h-0 md:min-h-screen  py-10 px-[2rem] transition-all duration-700 invisible md:visible"
+        className="w-full min-h-0 md:min-h-screen  py-10 px-[2rem] transition-all duration-700 invisible md:visible max-w-6xl mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-          {clients.map((client, index) => (
+          {clients.map((client, index) => ( 
             <Link key={index} href={client.url} target="_blank" >
               <motion.div
                 className="relative group h-0 md:h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
@@ -190,7 +190,7 @@ export default function Homepage() {
       </section>
 
 
-      <section className="relative w-full h-screen md:h-[120vh] overflow-hidden">
+      <section className="relative w-full h-screen md:h-[120vh] overflow-hidden max-w-6xl mx-auto">
         <h2 className="ml-20">
           <svg
             width="66"

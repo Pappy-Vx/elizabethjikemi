@@ -3,7 +3,7 @@
 export default function FutureFamily() {
     return (
         <section className="py-20 bg-[#000000CC] relative z-10 px-8 text-white">
-            <section className="mt-8 md:mt-32 pb-16 px-4 md:px-8">
+            <section className="mt-8 md:mt-32 pb-16 px-4 md:px-8 max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                     {/* Text Content */}
                     <div className="flex flex-col justify-between">
@@ -32,7 +32,7 @@ export default function FutureFamily() {
                                 Education is part of that legacy. It has always been our family’s gift to the future. My grandfather taught children under trees. My mother raised us with encyclopedias. And now, I design systems that help others grow. Faith is my compass. Social impact is my contribution. These are the three pillars we are building on, day by day.
                             </p>
                             <br />
-                            <p className="text-md md:text-xl font-sourceSerif mb-6 italic">
+                            <p className="text-md md:text-xl font-roadRadio mb-6">
                                 “Family is not just where life begins. It is where values are tested, where systems are shaped, and where legacies are formed. I believe in building a home that launches people well — a home filled with kindness, guided by clarity, and sustained by the quiet courage to keep growing, together.”
                             </p>
                             <br />

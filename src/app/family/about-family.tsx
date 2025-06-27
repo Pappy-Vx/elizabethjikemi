@@ -25,14 +25,14 @@ export default function AboutFamily() {
       className={`min-h-screen transition-colors duration-700 ease-in-out ${bgColor} relative z-50`}
     >
       {/* Hero Text Section */}
-      <section className="min-h-screen pt-32 px-8 pb-16 flex items-center md:items-end">
+      <section className="min-h-screen pt-32 px-8 pb-16 flex items-center md:items-end max-w-6xl mx-auto">
         <h1 className="font-roadRadio text-3xl sm:text-5xl md:text-5xl leading-tight uppercase mb-8">
           Where strategy begins and legacy is lived out in the everyday.
         </h1>
       </section>
 
       {/* Image & Text Side-by-Side Section */}
-      <section className="mt-8 md:mt-32 pb-16 px-4 md:px-8">
+      <section className="mt-8 md:mt-32 pb-16 px-4 md:px-8 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Image */}
           <div className="w-full h-full">
@@ -65,14 +65,14 @@ export default function AboutFamily() {
                 sheets keep everything moving, even when the microphone failed or the power cut
                 out. It was my first glimpse into the idea that systems are not cold or rigid. They
                 are human in every way. They carry our stories, keep us connected, and help
-                communities thrive.
-              </p>
-
-              <p className="text-md md:text-xl font-sourceSerif mb-6">
-                At age twelve, I was given the task of tracking food contributions for a major
+                communities thrive.At age twelve, I was given the task of tracking food contributions for a major
                 church event. What started as simple note-taking quickly became a full-blown
                 logistics rescue mission. I noticed where supplies were falling short and spoke up
-                about it. That experience taught me something I still believe today: good systems
+                about it.
+              </p>
+
+              <p className="text-md md:text-xl font-roadRadio mb-6">
+                That experience taught me something I still believe today: good systems
                 are rooted in care. They help us notice who is missing, what is being forgotten, and
                 where support is needed most.
               </p>

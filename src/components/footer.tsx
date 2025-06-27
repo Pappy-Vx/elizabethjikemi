@@ -61,12 +61,22 @@ export default function Footer() {
           <h2 className="font-roadRadio text-2xl md:text-4xl uppercase mb-4">
           Let’s build trust, raise more, and make data work for your cause 
           </h2>
-          <Link
+          <div className="flex flex-row justify-between items-center">
+<Link
             href="mailto:elizabethjikiemi@yahoo.com"
             className="font-roadRadio text-2xl md:text-4xl uppercase underline hover:opacity-80 transition-opacity"
           >
-             Connect now
+             Let's Connect
           </Link>
+          <Link
+          href="http://www.calendly.com/elizabethjikiemi"
+          className="font-roadRadio text-2xl md:text-4xl uppercase underline hover:opacity-80 transition-opacity"
+          >
+            
+          Schedule a Quick Chat
+          </Link>
+          </div>
+          
         </div>
 
         <div className=" flex justify-end ">
