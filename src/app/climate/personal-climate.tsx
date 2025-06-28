@@ -9,7 +9,7 @@ export default function PersonalClimate() {
           <div className="w-full h-full">
             <img
               src="/meval.jpg"
-              alt="Family change"
+              alt="elizabeth-value"
               className="w-full h-full object-cover rounded-xl"
             />
           </div>

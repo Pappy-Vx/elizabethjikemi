@@ -8,7 +8,7 @@ export default function DataClimate() {
           <div className="w-full h-64 mb-8">
             <img
               src="/dataclim.avif"
-              alt="stakeholder-family"
+              alt="data-climate"
               className="w-full h-full object-cover rounded-xl"
             />
           </div>

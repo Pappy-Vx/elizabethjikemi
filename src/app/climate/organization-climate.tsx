@@ -36,7 +36,7 @@ export default function OrganizationClimate() {
           <div className="w-full h-full">
             <img
               src="/organclimate.jpg"
-              alt="ladybuild"
+              alt="organization-climate"
               className="w-full h-full object-cover rounded-xl"
             />
           </div>

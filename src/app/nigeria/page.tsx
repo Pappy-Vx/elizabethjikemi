@@ -8,6 +8,8 @@ import Image from "next/image";
 import NigeriaCore from "./nigeria-core";
 import NigerianWay from "./nigerian-way";
 import DiasporaVision from "./diasopra-vision";
+import NigeriaFutue from "./nigeria-future";
+import LegacyImpact from "./legacy-impact";
 
 export const metadata = {
      title: 'Nigeria • Elizabeth Jikiemi Award-Winning Project Manager and NGO Specialist',
@@ -18,7 +20,7 @@ export default function Nigeria() {
   return (
 <>
       {/* Fixed Background Image */}
-      <div className="fixed top-0 left-0 w-full h-full z-0">
+      {/* <div className="fixed top-0 left-0 w-full h-full z-0">
         <Image
           src="/nigeriabg.jpg"
           alt="nigeria"
@@ -26,13 +28,17 @@ export default function Nigeria() {
           style={{ objectFit: "cover", pointerEvents: "none" }}
           priority
         />
-      </div> 
+      </div>  */}
+       <div className="bg-white fixed top-0 left-0 w-full h-full z-0">
+      </div>
 
       {/* Foreground Content */}
       <Header />
       <NigeriaCore />
       <NigerianWay />
       <DiasporaVision />
+      <NigeriaFutue />
+      <LegacyImpact />
 </>
 
 

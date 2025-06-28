@@ -47,7 +47,7 @@ export default function FutureClimate() {
                     <div className="w-full h-full">
                         <img
                             src="\climfut.avif"
-                            alt="future-family"
+                            alt="future-climate"
                             className="w-full h-full object-cover rounded-xl"
                         />
                     </div>
