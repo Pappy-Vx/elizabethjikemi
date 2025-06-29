@@ -41,8 +41,8 @@ export default function Technology() {
                     {/* Image */}
                     <div className="w-full h-full">
                         <img
-                            src="\legacy.avif"
-                            alt="Legacy and Impact"
+                            src="\techanch.avif"
+                            alt="Technology anchor"
                             className="w-full h-full object-cover rounded-xl"
                         />
                     </div>
