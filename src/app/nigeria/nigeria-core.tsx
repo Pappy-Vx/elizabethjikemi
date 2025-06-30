@@ -39,7 +39,7 @@ export default function NigeriaCore() {
           {/* Image */}
           <div className="w-full h-full">
             <img
-              src="/story-began.jpg"
+              src="/began.jpg"
               alt="story-began"
               className="w-full h-full object-cover rounded-xl"
             />

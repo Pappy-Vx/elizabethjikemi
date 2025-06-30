@@ -21,7 +21,24 @@ export default function ClientsSection() {
         </h2>
 
 
-        <span>Successfully Telling Stories with Data – <Link href="https://www.amazon.com/Successfully-Telling-Stories-Data-Interpret-ebook/dp/B0CZ96TCFC" className="underline text-green-500">Amazon Link.</Link></span>
+        {/* <span>Successfully Telling Stories with Data – <Link href="https://www.amazon.com/Successfully-Telling-Stories-Data-Interpret-ebook/dp/B0CZ96TCFC" className="underline text-green-500">Amazon Link.</Link></span> */}
+        <div className="flex flex-col gap-8 md:flex-row max-w-6xl mx-auto">
+          <div className="flex flex-col gap-3 px-4 border-r-2 border-white">
+            <h4 className="font-roadRadio">PUBLISHED BOOK</h4>
+            <img src="/autumn.jpg" alt="" className="w-full h-full object-cover rounded-sm"/>
+            <Link href="/publishing#published"className="font-sourceSerif ">View here</Link>
+          </div>
+           <div className="flex flex-col gap-3 px-4  border-r-2 border-white">
+            <h4 className="font-roadRadio">NEWSPAPER</h4>
+            <img src="/newspaper.png" alt=""  className="w-full h-full object-cover rounded-sm"/>
+            <Link href="/publishing#newspaper" className="font-sourceSerif ">View here</Link>
+          </div>
+           <div className="flex flex-col gap-3 px-4 border-r-2 border-white">
+            <h4 className="font-roadRadio">PEER REVIEWED ARTICLES</h4>
+            <img src="/article.png" alt=""  className="w-full h-full object-cover rounded-sm"/>
+            <Link href="/publishing#published" className="font-sourceSerif ">View here</Link>
+          </div>
+        </div>
 
         
       </div>
