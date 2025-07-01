@@ -7,7 +7,7 @@ export default function Voice() {
         <div className="w-full mx-auto">
           <div className="w-full h-64 mb-8">
             <img
-              src="/leading.avif"
+              src="/voicemat.avif"
               alt="Leading"
               className="w-full h-full object-cover rounded-xl"
             />

@@ -12,14 +12,7 @@ export default function Research() {
   return (
     <>
       {/* Fixed Background Image */}
-      <div className="fixed top-0 left-0 w-full h-full z-0">
-        <Image
-          src="/researchinfo.avif"
-          alt="research"
-          fill
-          style={{ objectFit: "cover", pointerEvents: "none" }}
-          priority
-        />
+      <div className="bg-white fixed top-0 left-0 w-full h-full z-0">
       </div>
 
       {/* Foreground Content */}

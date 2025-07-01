@@ -39,7 +39,7 @@ export default function TheClimate() {
           {/* Image */}
           <div className="w-full h-full">
             <img
-              src="/thheclimate.avif"
+              src="/steclimat.avif"
               alt="the-climate"
               className="w-full h-full object-cover rounded-xl"
             />

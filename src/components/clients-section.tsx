@@ -23,17 +23,17 @@ export default function ClientsSection() {
 
         {/* <span>Successfully Telling Stories with Data – <Link href="https://www.amazon.com/Successfully-Telling-Stories-Data-Interpret-ebook/dp/B0CZ96TCFC" className="underline text-green-500">Amazon Link.</Link></span> */}
         <div className="flex flex-col gap-8 md:flex-row max-w-6xl mx-auto">
-          <div className="flex flex-col gap-3 px-4 border-r-2 border-white">
+          <div className="flex flex-col gap-3 px-4 border-0 md:border-r-1  border-white">
             <h4 className="font-roadRadio">PUBLISHED BOOK</h4>
-            <img src="/autumn.jpg" alt="" className="w-full h-full object-cover rounded-sm"/>
-            <Link href="/publishing#published"className="font-sourceSerif ">View here</Link>
+            <img src="/storydata.png" alt="" className="w-full h-full object-cover rounded-sm"/>
+            <Link href="https://www.amazon.com/Successfully-Telling-Stories-Data-Interpret-ebook/dp/B0CZ96TCFC"className="font-sourceSerif ">View here</Link>
           </div>
-           <div className="flex flex-col gap-3 px-4  border-r-2 border-white">
+           <div className="flex flex-col gap-3 px-4 border-0 md:border-r-1 border-white">
             <h4 className="font-roadRadio">NEWSPAPER</h4>
             <img src="/newspaper.png" alt=""  className="w-full h-full object-cover rounded-sm"/>
             <Link href="/publishing#newspaper" className="font-sourceSerif ">View here</Link>
           </div>
-           <div className="flex flex-col gap-3 px-4 border-r-2 border-white">
+           <div className="flex flex-col gap-3 px-4 ">
             <h4 className="font-roadRadio">PEER REVIEWED ARTICLES</h4>
             <img src="/article.png" alt=""  className="w-full h-full object-cover rounded-sm"/>
             <Link href="/publishing#published" className="font-sourceSerif ">View here</Link>
