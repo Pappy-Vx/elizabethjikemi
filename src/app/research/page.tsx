@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Header from "@/components/header";
 import ResearchInfo from "@/components/ResearchInfo";
 import Image from "next/image";
+import ProblemStat from "./problem-stat";
 
 export const metadata = {
   title: 'Elizabeth Research • Problem Statement For E.J’S Doctorate Research',
@@ -17,7 +18,7 @@ export default function Research() {
 
       {/* Foreground Content */}
       <Header />
-      <ResearchInfo />
+      <ProblemStat />
     </>
 
 

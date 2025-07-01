@@ -35,7 +35,7 @@ export default function ResearchInfo() {
         <div className="w-full mx-auto">
           <div className="w-full ">
             <h3 className="text-2xl font-sourceSerif font-bold mb-4">
-              Exploring Blockchain and AI Integration for Operational Efficiency, Transparency, and Donor Engagement in African Nonprofits
+              
             </h3>
             <br />
             <p className="text-lg font-sourceSerif mb-4">

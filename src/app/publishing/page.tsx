@@ -12,7 +12,7 @@ export default function Publishing() {
   return (
 <>
       {/* Fixed Background Image */}
-     <div className="bg-red fixed top-0 left-0 w-full h-full z-0">
+     <div className="bg-white fixed top-0 left-0 w-full h-full z-0">
       </div>
 
       {/* Foreground Content */}
