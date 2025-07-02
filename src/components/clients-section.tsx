@@ -31,12 +31,12 @@ export default function ClientsSection() {
            <div className="flex flex-col gap-3 px-4 border-0 md:border-r-1 border-white">
             <h4 className="font-roadRadio">NEWSPAPER ARTICLES</h4>
             <img src="/newspaper.png" alt=""  className="w-full h-full object-cover rounded-sm"/>
-            <Link href="/publishing#newspaper" className="font-sourceSerif ">View here</Link>
+            <Link href="/newspaper" className="font-sourceSerif ">View here</Link>
           </div>
            <div className="flex flex-col gap-3 px-4 ">
             <h4 className="font-roadRadio">PEER REVIEWED ARTICLES</h4>
             <img src="/article.png" alt=""  className="w-full h-full object-cover rounded-sm"/>
-            <Link href="/publishing#published" className="font-sourceSerif ">View here</Link>
+            <Link href="/peer" className="font-sourceSerif ">View here</Link>
           </div>
         </div>
 
