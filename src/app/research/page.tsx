@@ -3,6 +3,10 @@ import Header from "@/components/header";
 import ResearchInfo from "@/components/ResearchInfo";
 import Image from "next/image";
 import ProblemStat from "./problem-stat";
+import Initiative from "./initiative";
+import Kenya from "./kenya";
+import CrowdFund from "./crowd-fund";
+import PublicHealth from "./public-health";
 
 export const metadata = {
   title: 'Elizabeth Research • Problem Statement For E.J’S Doctorate Research',
@@ -19,6 +23,10 @@ export default function Research() {
       {/* Foreground Content */}
       <Header />
       <ProblemStat />
+      <Initiative />
+      <Kenya />
+      <CrowdFund />
+      <PublicHealth />
     </>
 
 
