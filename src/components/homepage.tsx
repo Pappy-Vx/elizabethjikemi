@@ -48,8 +48,40 @@ const clients = [
   },
 ];
 
+
+const testimonials = [
+  {
+    name: "ASUQUO OLAWALE OKON",
+    title: "Senior HR Consultant",
+    content:
+      "I've known Bode since 2012, and her integrity has always left a lasting impression. She's incredibly trustworthy, handling every task and situation with honesty and precision. Bode sets a high standard for professionalism, and I highly recommend her.",
+  },
+  {
+    name: "Jacob E.",
+    title: "Business Analyst, AI Enthusiast",
+    content: "I wholeheartedly recommend Bode Elizabeth. Having studied alongside her at California Miramar University, I saw firsthand her dedication, intelligence, and collaborative spirit. She's a natural leader, incredibly professional, and genuinely cares about others. Bode will be an invaluable asset to any team, and I'm excited to see all she achieves. ",
+  },
+  {
+    name: "Oluwatobi A.",
+    title: " Ex-Google | Scaling Tech Startups",
+    content:
+      "I've been lucky to call Bode a close friend since 2004. She's a visionary go-getter, always full of practical advice, and incredibly effective. I witnessed her dedication firsthand with The Food Shelter, where she efficiently organized aid for families. Bode is a unique blend of drive and compassion, constantly evolving yet remaining grounded and supportive. If you need a leader who drives real change with vision and heart, Bode is your person.",
+  },
+];
+
+
 export default function Homepage() {
   const [bgColor, setBgColor] = useState("#FFFFFF"); // Default: White Background
+
+const [activeIndex, setActiveIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  }, 10000); // every 5s
+
+  return () => clearInterval(interval);
+}, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,7 +117,7 @@ export default function Homepage() {
     >
       {/* Hero Section */}
       <section className="min-h-screen pt-32 px-8 max-w-6xl mx-auto flex flex-col justify-center max-w-6xl mx-auto">
-        <h1 className="font-roadRadio text-2xl sm:text-3xl md:text-4xl lg:text-7xl leading-tight uppercase">
+        <h1 className="text-center sm:text-left font-roadRadio text-3xl sm:text-4xl md:text-4xl lg:text-7xl leading-tight uppercase">
           Turning data into impact and nonprofits
           <br />
           into success stories.
@@ -151,11 +183,11 @@ export default function Homepage() {
       <section
         className="w-full min-h-screen md:min-h-0  py-10 md:py-0 px-[2rem] md:px-0 transition-all duration-700 visible md:invisible"
       >
-        <div className="grid grid-cols-1 gap-8 ">
+        <div className="grid grid-cols-1 gap-2 ">
           {clients.map((client, index) => (
             <Link key={index} href={client.url} target="_blank" >
               <motion.div
-                className="relative group h-[60vh] md:h-0 flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
+                className="relative group h-[60vh] md:h-0 flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 text-anim"
                 onMouseEnter={() => setBgColor(client.bgColor)}
                 onMouseLeave={() =>
                   setBgColor(
@@ -180,7 +212,7 @@ export default function Homepage() {
                     src={client.logo}
                     alt={client.name}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                   />
                 </motion.div>
               </motion.div>
@@ -237,6 +269,67 @@ export default function Homepage() {
           >
             Visit Elizabeth Jikiemi
           </Link>
+        </div>
+      </section>
+
+            {/* Testimonials Section */}
+      <section className="py-20 px-6 bg-transparent text-white relative z-10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-6xl font-bold mb-10 font-roadRadio uppercase">
+            TESTIMONIALS
+          </h2>
+
+           <div className="relative w-full h-[400px] overflow-hidden">
+      {testimonials.map((t, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{
+            opacity: index === activeIndex ? 1 : 0,
+            x: index === activeIndex ? 0 : 100,
+          }}
+          transition={{ duration: 0.6 }}
+          className={`absolute inset-0 flex flex-col justify-center items-center px-4 transition-opacity duration-1000 ${
+            index === activeIndex ? "block" : "hidden"
+          }`}
+        >
+          {/* <Image
+            src=""
+            alt={t.name}
+            width={80}
+            height={80}
+            className="rounded-full mb-4"
+          /> */}
+          <p className="text-md md:text-xl font-sourceSerif italic mb-4 max-w-2xl">
+            “{t.content}”
+          </p>
+          <p className="font-semibold font-roadRadio uppercase">{t.name}</p>
+          <p className="text-sm text-white">{t.title}</p>
+        </motion.div>
+      ))}
+
+      {/* Navigation Arrows */}
+      <button
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-black hover:text-white rounded-full p-2 hover:bg-gray-800"
+        onClick={() =>
+          setActiveIndex((prev) =>
+            prev === 0 ? testimonials.length - 1 : prev - 1
+          )
+        }
+        aria-label="Previous testimonial"
+      >
+        ←
+      </button>
+      <button
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-black hover:text-white rounded-full p-2 hover:bg-gray-800"
+        onClick={() =>
+          setActiveIndex((prev) => (prev + 1) % testimonials.length)
+        }
+        aria-label="Next testimonial"
+      >
+        →
+      </button>
+    </div>
         </div>
       </section>
 

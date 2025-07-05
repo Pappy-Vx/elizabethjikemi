@@ -1,16 +1,32 @@
 "use client";
+import { motion } from "framer-motion";
 
 export default function AwardsSection() {
+
   const awards = [
-    { name: "Nigeria at 100 Awards", project: "NGO", year: "2014" },
-    { name: "Women 4 Africa UK", project: "Global Humanitarian of the Year", year: "2017" },
+    {
+      logo: "/w4a.png",
+      title: "Women 4 Africa UK",
+      year: 2017,
+    },
+    {
+      logo: "/unsung.png",
+      title: "Unsung Heroines",
+      year: 2018,
+    },
+    {
+      logo: "/nigeria100.png",
+      title: "Nigeria at 100 Awards",
+      year: 2014,
+    },
+
   ];
 
   return (
     <section className="py-20 bg-[#000000CC] relative z-10 px-8 text-white">
       <div className="max-w-6xl mx-auto">
-        
-      <h2 className="font-roadRadio text-2xl md:text-7xl lg:text-8xl uppercase mb-16 ">
+
+        <h2 className="font-roadRadio text-2xl md:text-7xl lg:text-8xl uppercase mb-16 ">
           <svg
             width="48"
             height="10"
@@ -25,25 +41,26 @@ export default function AwardsSection() {
             />
           </svg>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {awards.map((award, index) => (
-            <div key={index} className="border-t border-gray-800 py-3 ">
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="col-span-1">
-                  <p className="text-sm opacity-80">{award.name}</p>
-                </div>
-                <div className="col-span-1">
-                  <p className="text-sm opacity-80">{award.project}</p>
-                </div>
-                <div className="col-span-1 ">
-                  <p className="text-sm opacity-80">{award.year}</p>
-                </div>
-              </div>
-
-            </div>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-[#f9f9f9] p-6 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                src={award.logo}
+                alt={award.title}
+                className="mx-auto h-16 object-contain grayscale hover:grayscale-0 transition duration-500 mb-4"
+              />
+              <h3 className="text-lg font-semibold font-sourceSerif text-black">{award.title}</h3>
+              <p className="text-sm text-gray-500">{award.year}</p>
+            </motion.div>
           ))}
         </div>
-        
       </div>
     </section>
   );
