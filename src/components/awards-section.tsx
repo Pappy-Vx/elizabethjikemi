@@ -7,18 +7,18 @@ export default function AwardsSection() {
     {
       logo: "/w4a.png",
       title: "Women 4 Africa UK",
-      year: 2017,
+      year: 2015,
     },
     {
       logo: "/unsung.png",
       title: "Unsung Heroines",
-      year: 2018,
-    },
-    {
-      logo: "/nigeria100.png",
-      title: "Nigeria at 100 Awards",
       year: 2014,
     },
+    // {
+    //   logo: "/nigeria100.png",
+    //   title: "Nigeria at 100 Awards",
+    //   year: 2014,
+    // },
 
   ];
 
@@ -41,7 +41,7 @@ export default function AwardsSection() {
             />
           </svg>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {awards.map((award, index) => (
             <motion.div
               key={index}
