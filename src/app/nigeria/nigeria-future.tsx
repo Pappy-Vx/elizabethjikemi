@@ -8,7 +8,7 @@ export default function NigeriaFutue() {
           {/* Image */}
           <div className="w-full h-full">
             <img
-              src="/nigeria-fut.avif"
+              src="/theatre.jpg"
               alt="nigeria-future"
               className="w-full h-full object-cover rounded-xl"
             />

@@ -31,7 +31,7 @@ export default function NigerianWay() {
           {/* Image */}
           <div className="w-full h-full">
             <img
-              src="/straength.jpg"
+              src="/rock.jpg"
               alt="strategy-strength"
               className="w-full h-full object-cover rounded-xl"
             />
