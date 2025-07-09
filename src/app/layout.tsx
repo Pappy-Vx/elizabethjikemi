@@ -1,5 +1,6 @@
 "use client"; // Required for hooks like usePathname
 import { useState, useEffect } from "react";
+import { BadgeInfo } from "lucide-react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { motion, AnimatePresence } from "framer-motion";
@@ -70,10 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
                 {/* Modal Content */}
                 <h2 className="text-2xl md:text-3xl font-bold font-roadRadio mb-4 text-center">
-                  Join Elizabeth's Newsletter
+                  Let’s Stay Connected
                 </h2>
                 <p className="text-sm md:text-base text-center mb-6 font-sourceSerif">
-                  Get exclusive updates, tips, and a **free copy** of one of Elizabeth Jikiemi’s published books delivered to your inbox.
+                  Get monthly insights, and practical tools for building systems that work in the real world. I'll share what I'm learning and building...
                 </p>
 
                 {/* Form */}
@@ -85,6 +86,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   }}
                   className="flex flex-col gap-4"
                 >
+                  <input type="text"
+                  placeholder="Enter your Name"
+                   className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  />
                   <input
                     type="email"
                     required
@@ -95,9 +100,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     type="submit"
                     className="bg-black text-white py-3 rounded-md hover:bg-gray-800 transition-colors"
                   >
-                    Subscribe & Get Free Book →
+                    Subscribe
                   </button>
                 </form>
+                <p className="text-xs gap-4 flex flex-row items-center justify-center text-center mb-6 font-sourceSerif mt-4"> <span><BadgeInfo /></span> Promise not to spam you. Just the goodies in your inbox, once a month.</p>
               </motion.div>
             </motion.div>
           )}
