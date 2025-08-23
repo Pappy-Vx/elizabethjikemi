@@ -1,13 +1,14 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  // Use 'export' mode for static site generation
-  output: "export",
+  // ✅ Only enable static export in production
+  ...(isProd && { output: "export" }),
 
-  // Set build directory
-  distDir: process.env.NODE_ENV === "production" ? "build" : ".next",
+  // Build directory
+  distDir: isProd ? "build" : ".next",
 
-  // Image domains for <Image> component
   images: {
     domains: [
       "source.unsplash.com",
@@ -36,7 +37,6 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // Optional: helps with static hosting where each page has its own folder
   trailingSlash: true,
 };
 

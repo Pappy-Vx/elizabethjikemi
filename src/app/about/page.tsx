@@ -5,7 +5,6 @@ import ClientsSection from '@/components/clients-section';
 import AwardsSection from '@/components/awards-section';
 import Header from "@/components/header";
 import AboutHero from "@/components/about-hero";
-import Image from "next/image";
 
 export const metadata = {
   title: 'About • Elizabeth Jikiemi Award-Winning Project Manager and NGO Specialist',
@@ -18,24 +17,32 @@ export default function About() {
       {/* Fixed Background Image */}
       <div className="sm:invisible visible">
         <div className="fixed bottom-[-12rem] left-[-14rem] w-[40rem] h-full z-0">
-          <Image
+          <img
             src="/me.jpg"
             alt="Elizabeth Jikiemi"
-            fill
-            style={{ objectFit: "contain", pointerEvents: "none" }}
-            priority
+            style={{
+              objectFit: "contain",
+              width: "100%",
+              height: "100%",
+              pointerEvents: "none",
+            }}
           />
+
         </div>
       </div>
       <div className="sm:visible invisible">
         <div className="fixed top-0 left-0 w-full h-full z-0">
-          <Image
+          <img
             src="/me.jpg"
             alt="Elizabeth Jikiemi"
-            fill
-            style={{ objectFit: "cover", pointerEvents: "none" }}
-            priority
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+              pointerEvents: "none",
+            }}
           />
+
         </div>
       </div>
 

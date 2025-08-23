@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import Parser from "rss-parser";
 
@@ -73,15 +72,15 @@ const testimonials = [
 export default function Homepage() {
   const [bgColor, setBgColor] = useState("#FFFFFF"); // Default: White Background
 
-const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  }, 10000); // every 5s
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 10000); // every 5s
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -137,7 +136,7 @@ useEffect(() => {
         className="w-full min-h-0 md:min-h-screen  py-10 px-[2rem] transition-all duration-700 invisible md:visible max-w-6xl mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-          {clients.map((client, index) => ( 
+          {clients.map((client, index) => (
             <Link key={index} href={client.url} target="_blank" >
               <motion.div
                 className="relative group h-0 md:h-[60vh] flex flex-col justify-center items-center overflow-hidden cursor-pointer transition-all duration-700 bg-[#FFFFFF1A] text-anim"
@@ -158,20 +157,19 @@ useEffect(() => {
                 </p>
 
 
-                    {/* Image (Zooms in on hover) */}
+                {/* Image (Zooms in on hover) */}
                 <motion.div
                   className="absolute w-full h-full"
                   initial={{ scale: 1, opacity: 0 }}
                   whileHover={{ scale: 1.2, opacity: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                  <Image
+                  <img
                     src={client.logo}
                     alt={client.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   />
+
                 </motion.div>
               </motion.div>
             </Link>
@@ -208,12 +206,16 @@ useEffect(() => {
                 <motion.div
                   className="absolute w-full h-full"
                 >
-                  <Image
+                  <img
                     src={client.logo}
                     alt={client.name}
-                    layout="fill"
-                    objectFit="contain"
+                    style={{
+                      objectFit: "contain",
+                      width: "100%",
+                      height: "100%",
+                    }}
                   />
+
                 </motion.div>
               </motion.div>
             </Link>
@@ -240,15 +242,12 @@ useEffect(() => {
           </svg>
         </h2>
         {/* Background video */}
-        <Image
-          alt="Background Video"
-          className="absolute left-5 md:left-20 top-28 md:top-64 inset-0 w-[90%] max-w-[80rem] h-[65%] object-cover"
+        <img
           src="/techgif.gif"
-          width={720}
-          height={780}
-          style={{ objectFit: "cover", pointerEvents: "none", }}
-          priority
+          alt="Background Video"
+          className="absolute left-5 md:left-20 top-28 md:top-64 inset-0 w-[90%] max-w-[80rem] h-[65%] object-cover pointer-events-none"
         />
+
 
         {/* Black overlay */}
         <div className="absolute inset-0  z-10" />
@@ -272,64 +271,63 @@ useEffect(() => {
         </div>
       </section>
 
-            {/* Testimonials Section */}
+      {/* Testimonials Section */}
       <section className="py-20 px-6 bg-transparent text-white relative z-10">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-6xl font-bold mb-10 font-roadRadio uppercase">
             TESTIMONIALS
           </h2>
 
-           <div className="relative w-full h-[400px] overflow-hidden">
-      {testimonials.map((t, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{
-            opacity: index === activeIndex ? 1 : 0,
-            x: index === activeIndex ? 0 : 100,
-          }}
-          transition={{ duration: 0.6 }}
-          className={`absolute inset-0 flex flex-col justify-center items-center px-4 transition-opacity duration-1000 ${
-            index === activeIndex ? "block" : "hidden"
-          }`}
-        >
-          {/* <Image
+          <div className="relative w-full h-[400px] overflow-hidden">
+            {testimonials.map((t, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{
+                  opacity: index === activeIndex ? 1 : 0,
+                  x: index === activeIndex ? 0 : 100,
+                }}
+                transition={{ duration: 0.6 }}
+                className={`absolute inset-0 flex flex-col justify-center items-center px-4 transition-opacity duration-1000 ${index === activeIndex ? "block" : "hidden"
+                  }`}
+              >
+                {/* <Image
             src=""
             alt={t.name}
             width={80}
             height={80}
             className="rounded-full mb-4"
           /> */}
-          <p className="text-md md:text-xl font-sourceSerif italic mb-4 max-w-2xl">
-            “{t.content}”
-          </p>
-          <p className="font-semibold font-roadRadio uppercase">{t.name}</p>
-          <p className="text-sm text-white">{t.title}</p>
-        </motion.div>
-      ))}
+                <p className="text-md md:text-xl font-sourceSerif italic mb-4 max-w-2xl">
+                  “{t.content}”
+                </p>
+                <p className="font-semibold font-roadRadio uppercase">{t.name}</p>
+                <p className="text-sm text-white">{t.title}</p>
+              </motion.div>
+            ))}
 
-      {/* Navigation Arrows */}
-      <button
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-black hover:text-white rounded-full p-2 hover:bg-gray-800"
-        onClick={() =>
-          setActiveIndex((prev) =>
-            prev === 0 ? testimonials.length - 1 : prev - 1
-          )
-        }
-        aria-label="Previous testimonial"
-      >
-        ←
-      </button>
-      <button
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-black hover:text-white rounded-full p-2 hover:bg-gray-800"
-        onClick={() =>
-          setActiveIndex((prev) => (prev + 1) % testimonials.length)
-        }
-        aria-label="Next testimonial"
-      >
-        →
-      </button>
-    </div>
+            {/* Navigation Arrows */}
+            <button
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-black hover:text-white rounded-full p-2 hover:bg-gray-800"
+              onClick={() =>
+                setActiveIndex((prev) =>
+                  prev === 0 ? testimonials.length - 1 : prev - 1
+                )
+              }
+              aria-label="Previous testimonial"
+            >
+              ←
+            </button>
+            <button
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-black hover:text-white rounded-full p-2 hover:bg-gray-800"
+              onClick={() =>
+                setActiveIndex((prev) => (prev + 1) % testimonials.length)
+              }
+              aria-label="Next testimonial"
+            >
+              →
+            </button>
+          </div>
         </div>
       </section>
 
